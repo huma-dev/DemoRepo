@@ -14,8 +14,8 @@
     <object>objects\object0</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_FirstRoom</room>
     <room>rooms\rm_secondRoom</room>
+    <room>rooms\rm_FirstRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
