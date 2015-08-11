@@ -25,13 +25,35 @@
       <sprite>sprites\spr_tree5</sprite>
     </sprites>
     <sprites name="Player">
-      <sprite>sprites\spr_player1</sprite>
+      <sprite>sprites\spr_player_front</sprite>
+      <sprite>sprites\spr_RightFront</sprite>
+      <sprite>sprites\spr_LeftFront</sprite>
+    </sprites>
+    <sprites name="Buttons">
+      <sprite>sprites\spr_btn_start</sprite>
+      <sprite>sprites\spr_btn_Stats</sprite>
+      <sprite>sprites\spr_btn_Settings</sprite>
+      <sprite>sprites\spr_btn_About</sprite>
+    </sprites>
+    <sprites name="Extras">
+      <sprite>sprites\spr_cap</sprite>
+      <sprite>sprites\spr_logo</sprite>
+      <sprite>sprites\spr_nextRoom</sprite>
+    </sprites>
+    <sprites name="Boat">
+      <sprite>sprites\spr_boatExit</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\pth_GameExit</path>
+    <path>paths\pth_boatExit</path>
+  </paths>
+  <scripts name="scripts">
+    <script>scripts\scr_PlayerMovement.gml</script>
+  </scripts>
   <objects name="objects">
     <objects name="DummyObjects">
       <object>objects\object0</object>
@@ -49,22 +71,36 @@
       <object>objects\obj_boatRamp</object>
       <object>objects\obj_waterfall1</object>
       <object>objects\obj_tree5</object>
+      <object>objects\objBoatExit</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_player1</object>
+      <object>objects\obj_playerExit</object>
+      <object>objects\obj_player_front</object>
+    </objects>
+    <objects name="ExtraObjects">
+      <object>objects\obj_capr</object>
+      <object>objects\obj_logo</object>
+      <object>objects\obj_nextRoom</object>
+    </objects>
+    <objects name="Buttons">
+      <object>objects\obj_btn_start</object>
+      <object>objects\obj_btn_Stats</object>
+      <object>objects\obj_btn_Settings</object>
+      <object>objects\obj_btn_About</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_FirstRoom</room>
-    <room>rooms\rm_secondRoom</room>
+    <room>rooms\rm_IntroScreen</room>
     <room>rooms\rm_Island</room>
     <room>rooms\rm_Admiral</room>
     <room>rooms\rm_Quest</room>
     <room>rooms\rm_HoA</room>
     <room>rooms\rm_Exit</room>
     <room>rooms\rm_Home</room>
+    <room>rooms\rm_SailAway</room>
     <room>rooms\rm_Map</room>
-    <room>rooms\rmIslandSailAway</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
