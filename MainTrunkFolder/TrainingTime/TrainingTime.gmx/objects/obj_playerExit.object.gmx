@@ -51,12 +51,13 @@ path_start(pth_GameExit, 2 , 0 , 0 );
             <kind>1</kind>
             <string>if (carry)
 {
-
+image_speed = 0;
 x = objBoatExit.x+60;
 y = objBoatExit.y-35;
 }
 
 scr_PlayerMovement();
+
 </string>
           </argument>
         </arguments>

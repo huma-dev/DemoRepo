@@ -46,6 +46,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
+    <background>background\bg_LevelMap</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_GameExit</path>
@@ -99,8 +100,8 @@
     <room>rooms\rm_HoA</room>
     <room>rooms\rm_Exit</room>
     <room>rooms\rm_Home</room>
-    <room>rooms\rm_SailAway</room>
     <room>rooms\rm_Map</room>
+    <room>rooms\rm_SailAway</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
