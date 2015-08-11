@@ -6,26 +6,65 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\sprite0</sprite>
-    <sprite>sprites\sprite1</sprite>
+    <sprites name="DummySprites">
+      <sprite>sprites\sprite1</sprite>
+      <sprite>sprites\sprite0</sprite>
+    </sprites>
+    <sprites name="Island">
+      <sprite>sprites\spr_map</sprite>
+      <sprite>sprites\spr_house1</sprite>
+      <sprite>sprites\spr_house2</sprite>
+      <sprite>sprites\spr_house3</sprite>
+      <sprite>sprites\spr_lightHouse</sprite>
+      <sprite>sprites\spr_tree1</sprite>
+      <sprite>sprites\spr_tree2</sprite>
+      <sprite>sprites\spr_tree3</sprite>
+      <sprite>sprites\spr_tree4</sprite>
+      <sprite>sprites\spr_boatRamp</sprite>
+      <sprite>sprites\spr_waterfall1</sprite>
+      <sprite>sprites\spr_tree5</sprite>
+    </sprites>
+    <sprites name="Player">
+      <sprite>sprites\spr_player1</sprite>
+    </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_map</background>
+  </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
-    <object>objects\object0</object>
-    <object>objects\object1</object>
+    <objects name="DummyObjects">
+      <object>objects\object0</object>
+      <object>objects\object1</object>
+    </objects>
+    <objects name="Island">
+      <object>objects\obj_house1</object>
+      <object>objects\obj_house2</object>
+      <object>objects\obj_house3</object>
+      <object>objects\obj_Lighthouse</object>
+      <object>objects\obj_tree1</object>
+      <object>objects\obj_tree2</object>
+      <object>objects\obj_tree3</object>
+      <object>objects\obj_tree4</object>
+      <object>objects\obj_boatRamp</object>
+      <object>objects\obj_waterfall1</object>
+      <object>objects\obj_tree5</object>
+    </objects>
+    <objects name="Player">
+      <object>objects\obj_player1</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rmIslandSailAway</room>
     <room>rooms\rm_FirstRoom</room>
     <room>rooms\rm_secondRoom</room>
-    <room>rooms\rm_Intro</room>
+    <room>rooms\rm_Island</room>
     <room>rooms\rm_Admiral</room>
     <room>rooms\rm_Quest</room>
     <room>rooms\rm_HoA</room>
     <room>rooms\rm_Exit</room>
     <room>rooms\rm_Home</room>
     <room>rooms\rm_Map</room>
+    <room>rooms\rmIslandSailAway</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
