@@ -7,15 +7,25 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
+    <sprite>sprites\sprite1</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\object0</object>
+    <object>objects\object1</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_secondRoom</room>
+    <room>rooms\rmIslandSailAway</room>
     <room>rooms\rm_FirstRoom</room>
+    <room>rooms\rm_secondRoom</room>
+    <room>rooms\rm_Intro</room>
+    <room>rooms\rm_Admiral</room>
+    <room>rooms\rm_Quest</room>
+    <room>rooms\rm_HoA</room>
+    <room>rooms\rm_Exit</room>
+    <room>rooms\rm_Home</room>
+    <room>rooms\rm_Map</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
