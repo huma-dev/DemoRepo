@@ -1,1 +1,3 @@
-sfgfvab
+ini file path
+
+C:\Users\RC931\AppData\Local

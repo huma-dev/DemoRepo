@@ -53,9 +53,10 @@
     <instance objName="obj_player_front" x="445" y="125" name="inst_5B482A13" locked="0" code="" scaleX="0.820513010025024" scaleY="0.655171990394592" colour="4294967295" rotation="0"/>
     <instance objName="obj_btn_start" x="130" y="170" name="inst_A272A2FC" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_btn_Stats" x="130" y="230" name="inst_6F15831F" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_btn_Settings" x="130" y="290" name="inst_B6AEE356" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btn_Exit" x="130" y="420" name="inst_B6AEE356" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_btn_About" x="130" y="360" name="inst_FCDF75C4" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_logo" x="30" y="20" name="inst_94FDA9ED" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btn_Settings" x="130" y="295" name="inst_11906041" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_capr" x="460" y="125" name="inst_DEDFCC9A" locked="0" code="" scaleX="1.3720930814743" scaleY="1.27999997138977" colour="4294967295" rotation="-5"/>
   </instances>
   <tiles/>
