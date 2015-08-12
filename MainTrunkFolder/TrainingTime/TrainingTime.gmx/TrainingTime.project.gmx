@@ -34,6 +34,7 @@
       <sprite>sprites\spr_btn_Stats</sprite>
       <sprite>sprites\spr_btn_Settings</sprite>
       <sprite>sprites\spr_btn_About</sprite>
+      <sprite>sprites\spr_home</sprite>
     </sprites>
     <sprites name="Extras">
       <sprite>sprites\spr_cap</sprite>
@@ -42,6 +43,17 @@
     </sprites>
     <sprites name="Boat">
       <sprite>sprites\spr_boatExit</sprite>
+    </sprites>
+    <sprites name="Map">
+      <sprite>sprites\spr_level</sprite>
+      <sprite>sprites\sprr_blue_locked</sprite>
+      <sprite>sprites\spr_blue_unlocked</sprite>
+      <sprite>sprites\spr_green_locked</sprite>
+      <sprite>sprites\spr_green_unlocked</sprite>
+      <sprite>sprites\spr_grey_locked</sprite>
+      <sprite>sprites\spr_grey_unlocked</sprite>
+      <sprite>sprites\spr_red_locked</sprite>
+      <sprite>sprites\spr_red_unlocked</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -62,7 +74,7 @@
     </objects>
     <objects name="Island">
       <object>objects\obj_house1</object>
-      <object>objects\obj_house2</object>
+      <object>objects\obj_houseMap</object>
       <object>objects\obj_house3</object>
       <object>objects\obj_Lighthouse</object>
       <object>objects\obj_tree1</object>
@@ -89,6 +101,14 @@
       <object>objects\obj_btn_Stats</object>
       <object>objects\obj_btn_Settings</object>
       <object>objects\obj_btn_About</object>
+      <object>objects\obj_home</object>
+    </objects>
+    <objects name="Map">
+      <object>objects\obj_level</object>
+      <object>objects\obj_red</object>
+      <object>objects\obj_green</object>
+      <object>objects\obj_blue</object>
+      <object>objects\obj_grey</object>
     </objects>
   </objects>
   <rooms name="rooms">

@@ -51,7 +51,7 @@
   </views>
   <instances>
     <instance objName="obj_house1" x="295" y="59" name="inst_1F0EA074" locked="0" code="" scaleX="0.600000023841858" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="obj_house2" x="416" y="169" name="inst_90DB0799" locked="0" code="" scaleX="0.522988021373749" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_houseMap" x="416" y="169" name="inst_90DB0799" locked="0" code="" scaleX="0.522988021373749" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_house3" x="129" y="174" name="inst_49B9279A" locked="0" code="" scaleX="0.5625" scaleY="0.514423072338104" colour="4294967295" rotation="0"/>
     <instance objName="obj_Lighthouse" x="507" y="170" name="inst_55BE2153" locked="0" code="" scaleX="0.455056011676788" scaleY="0.442196995019913" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree1" x="32" y="32" name="inst_E0CDBA76" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
