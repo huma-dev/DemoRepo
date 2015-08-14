@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var username = scr_getItem("player");
+            <string>//var username = scr_getItem("player");
 
 
 

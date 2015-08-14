@@ -2,7 +2,7 @@
  if file_exists("Training.ini") then
  {
 ini_open( 'Training.ini' );
- val  = ini_read_real( 'PlayerSettings', argument0, 0 );
+ val  = ini_read_string( 'PlayerSettings', 'UserName', 0 );
  show_message(val);
 ini_close();}
  
