@@ -69,10 +69,23 @@
       <sprite>sprites\spr_level3R</sprite>
       <sprite>sprites\spr_level4R</sprite>
     </sprites>
+    <sprites name="CatchTheEggs">
+      <sprite>sprites\spr_Chick</sprite>
+      <sprite>sprites\spr_egg</sprite>
+      <sprite>sprites\spr_egg_cracked</sprite>
+      <sprite>sprites\spr_eggBroken</sprite>
+      <sprite>sprites\spr_rack</sprite>
+      <sprite>sprites\spr_Resul</sprite>
+      <sprite>sprites\spr_rod</sprite>
+      <sprite>sprites\sprBasket</sprite>
+      <sprite>sprites\sprParchment</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
     <background>background\bg_LevelMap</background>
+    <background>background\bg_CatchTheEggs</background>
+    <background>background\bg_sky</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_GameExit</path>
@@ -84,7 +97,21 @@
     <script>scripts\scr_getItem.gml</script>
     <script>scripts\scr_RightPane.gml</script>
     <script>scripts\scr_LeftPane.gml</script>
+    <scripts name="CatchTheEggs">
+      <script>scripts\scr_Boolean.gml</script>
+      <script>scripts\scr_explodeString.gml</script>
+      <script>scripts\scr_globalInitialize.gml</script>
+      <script>scripts\scr_options.gml</script>
+      <script>scripts\scr_question.gml</script>
+      <script>scripts\scr_wrapText.gml</script>
+      <script>scripts\script3.gml</script>
+    </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font0</font>
+    <font>fonts\font1</font>
+    <font>fonts\font2</font>
+  </fonts>
   <objects name="objects">
     <objects name="DummyObjects">
       <object>objects\object0</object>
@@ -148,6 +175,17 @@
       <object>objects\obj_inoutLeft</object>
       <object>objects\obj_inoutRight</object>
     </objects>
+    <objects name="CatchTheEggs">
+      <object>objects\o_something</object>
+      <object>objects\objBasket</object>
+      <object>objects\objControl</object>
+      <object>objects\objParchment</object>
+      <object>objects\objRack</object>
+      <object>objects\objResult</object>
+      <object>objects\objRod</object>
+      <object>objects\objtemp</object>
+      <object>objects\obj_egg</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_FirstRoom</room>
@@ -165,6 +203,12 @@
       <room>rooms\rm_level2</room>
       <room>rooms\rm_level3</room>
       <room>rooms\rm_level4</room>
+    </rooms>
+    <rooms name="CatchTheEggs">
+      <room>rooms\FirstRoom</room>
+      <room>rooms\room0</room>
+      <room>rooms\room1</room>
+      <room>rooms\room3</room>
     </rooms>
   </rooms>
   <help>

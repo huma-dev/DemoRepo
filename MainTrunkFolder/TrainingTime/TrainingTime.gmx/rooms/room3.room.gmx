@@ -3,22 +3,14 @@
   <caption></caption>
   <width>640</width>
   <height>480</height>
-  <vsnap>1</vsnap>
-  <hsnap>1</hsnap>
+  <vsnap>32</vsnap>
+  <hsnap>32</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
-  <colour>12189695</colour>
+  <colour>16755027</colour>
   <showcolour>-1</showcolour>
-  <code>/*if (global.CacthTheEggCounter &gt; 2)
-{
-room_goto(room3);
-}
-else{
-global.CacthTheEggCounter ++ ;
-
-}
-*/</code>
+  <code></code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <makerSettings>
@@ -38,7 +30,7 @@ global.CacthTheEggCounter ++ ;
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="bg_CatchTheEggs" x="0" y="0" htiled="0" vtiled="0" hspeed="0" vspeed="0" stretch="-1"/>
+    <background visible="-1" foreground="0" name="bg_sky" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -58,14 +50,8 @@ global.CacthTheEggCounter ++ ;
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objRack" x="32" y="160" name="inst_733D1ACD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRack" x="224" y="160" name="inst_190CF5AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRack" x="368" y="160" name="inst_F00C1EB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRack" x="527" y="158" name="inst_86AFC44C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objParchment" x="4" y="-32" name="inst_A4AAFEB3" locked="0" code="" scaleX="1.1599999666214" scaleY="0.467836260795593" colour="4294967295" rotation="0"/>
-    <instance objName="objControl" x="24" y="6" name="inst_0AC74A91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objRod" x="-16" y="400" name="inst_64CF3ECB" locked="0" code="" scaleX="0.600000023841858" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="objBasket" x="328" y="411" name="inst_C86612C7" locked="0" code="" scaleX="0.597015023231506" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objtemp" x="256" y="256" name="inst_E4CA27EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objResult" x="32" y="192" name="inst_36A86FB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
