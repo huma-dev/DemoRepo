@@ -349,5 +349,10 @@
     <option_winphone_tile_type>0</option_winphone_tile_type>
     <option_writeerrors>false</option_writeerrors>
   </Options>
-  <ConfigConstants/>
+  <ConfigConstants>
+    <constants number="2">
+      <constant name="rmFleetOverView_Instructor_statement2">"When I continuosly check the technical details of a module in my ship's system, i'm doing Regression Testing."</constant>
+      <constant name="rmFleetOverView_Instructor_statement1">"Hello, I'll teach you Management skills"</constant>
+    </constants>
+  </ConfigConstants>
 </Config>

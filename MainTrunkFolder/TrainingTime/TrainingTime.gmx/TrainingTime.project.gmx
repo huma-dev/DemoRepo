@@ -23,6 +23,7 @@
       <sprite>sprites\spr_boatRamp</sprite>
       <sprite>sprites\spr_waterfall1</sprite>
       <sprite>sprites\spr_tree5</sprite>
+      <sprite>sprites\spr_ParchmentChallenge</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_front</sprite>
@@ -31,6 +32,7 @@
     </sprites>
     <sprites name="Buttons">
       <sprite>sprites\spr_btn_start</sprite>
+      <sprite>sprites\sprStartChallengeButton</sprite>
       <sprite>sprites\spr_btn_Stats</sprite>
       <sprite>sprites\spr_btn_Settings</sprite>
       <sprite>sprites\spr_btn_About</sprite>
@@ -88,6 +90,11 @@
       <sprite>sprites\sprParchment</sprite>
       <sprite>sprites\sprScore</sprite>
     </sprites>
+    <sprites name="AdmiralNate">
+      <sprite>sprites\sprAdmiralNate</sprite>
+      <sprite>sprites\spr_NateDialog</sprite>
+      <sprite>sprites\spr_NateSpeaking</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -95,10 +102,12 @@
     <background>background\bg_CatchTheEggs</background>
     <background>background\bg_sky</background>
     <background>background\bg_Result</background>
+    <background>background\bgAdmiral</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_GameExit</path>
     <path>paths\pth_boatExit</path>
+    <path>paths\pthBoy</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\scr_PlayerMovement.gml</script>
@@ -113,7 +122,9 @@
       <script>scripts\scr_options.gml</script>
       <script>scripts\scr_question.gml</script>
       <script>scripts\scr_wrapText.gml</script>
-      <script>scripts\script3.gml</script>
+    </scripts>
+    <scripts name="IslandIntro">
+      <script>scripts\scrChallengeHud.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -139,6 +150,7 @@
       <object>objects\obj_waterfall1</object>
       <object>objects\obj_tree5</object>
       <object>objects\objBoatExit</object>
+      <object>objects\objControl_Island</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_player1</object>
@@ -161,6 +173,7 @@
       <object>objects\obj_btn_go</object>
       <object>objects\obj_close</object>
       <object>objects\obj_btn_Continue</object>
+      <object>objects\obj_StartChallenge</object>
     </objects>
     <objects name="Map">
       <object>objects\obj_level</object>
@@ -197,11 +210,24 @@
       <object>objects\obj_egg</object>
       <object>objects\objScore</object>
     </objects>
+    <objects name="IslandIntro">
+      <object>objects\objTestChallenge</object>
+      <object>objects\objTestHud</object>
+      <object>objects\objChallengeHud</object>
+    </objects>
+    <objects name="AdmiralNate">
+      <object>objects\objAdmiralNate</object>
+      <object>objects\objNate</object>
+      <object>objects\objDialog</object>
+      <object>objects\objControl_AdmiralRoom</object>
+      <object>objects\obj_NateLecture</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_FirstRoom</room>
     <room>rooms\rm_IntroScreen</room>
     <room>rooms\rm_Island</room>
+    <room>rooms\rm_IslandIntro</room>
     <room>rooms\rm_Admiral</room>
     <room>rooms\rm_Quest</room>
     <room>rooms\rm_HoA</room>
@@ -221,6 +247,11 @@
       <room>rooms\room3</room>
     </rooms>
   </rooms>
+  <constants number="3">
+    <constant name="rmFleetOverView_Instructor_statement3">"To understand better, I'll show you a video that explains the concept of Software Management."</constant>
+    <constant name="rmFleetOverView_Instructor_statement2">"When I continuosly check the technical details of a module in my ship's system, i'm doing Regression Testing."</constant>
+    <constant name="rmFleetOverView_Instructor_statement1">"Hello , I'll teach you Software Project Management Skills"</constant>
+  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>
