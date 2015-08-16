@@ -141,8 +141,8 @@ image_index = 11;
 
 if (isCorrectAns)
 {
-x = objBasket.x + 10;
-y  = objBasket.y ;
+x = objBasket.x + 15;
+y  = objBasket.y +10 ;
 sprite_index = spr_Chick;
 global.CatchTheEggScore+=1;
 
@@ -214,7 +214,7 @@ instance_destroy();
           <argument>
             <kind>1</kind>
             <string>//score:
-draw_text(25, 150 , global.CatchTheEggScore );
+//draw_text(25, 150 , global.CatchTheEggScore );
 if (!collided)
 {
 draw_set_color(c_black);

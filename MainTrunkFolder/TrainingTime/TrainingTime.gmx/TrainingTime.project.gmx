@@ -39,6 +39,7 @@
       <sprite>sprites\spr_gotoIsland</sprite>
       <sprite>sprites\spr_btn_go</sprite>
       <sprite>sprites\spr_close</sprite>
+      <sprite>sprites\spr_Continue</sprite>
     </sprites>
     <sprites name="Extras">
       <sprite>sprites\spr_cap</sprite>
@@ -58,6 +59,12 @@
       <sprite>sprites\spr_grey_unlocked</sprite>
       <sprite>sprites\spr_red_locked</sprite>
       <sprite>sprites\spr_red_unlocked</sprite>
+      <sprites name="stars">
+        <sprite>sprites\spr_red_stars</sprite>
+        <sprite>sprites\spr_grey_stars</sprite>
+        <sprite>sprites\spr_green_stars</sprite>
+        <sprite>sprites\spr_blue_stars</sprite>
+      </sprites>
     </sprites>
     <sprites name="IntroScreens">
       <sprite>sprites\spr_level1_L</sprite>
@@ -79,6 +86,7 @@
       <sprite>sprites\spr_rod</sprite>
       <sprite>sprites\sprBasket</sprite>
       <sprite>sprites\sprParchment</sprite>
+      <sprite>sprites\sprScore</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -86,6 +94,7 @@
     <background>background\bg_LevelMap</background>
     <background>background\bg_CatchTheEggs</background>
     <background>background\bg_sky</background>
+    <background>background\bg_Result</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_GameExit</path>
@@ -151,6 +160,7 @@
       <object>objects\obj_gotoIsland</object>
       <object>objects\obj_btn_go</object>
       <object>objects\obj_close</object>
+      <object>objects\obj_btn_Continue</object>
     </objects>
     <objects name="Map">
       <object>objects\obj_level</object>
@@ -185,6 +195,7 @@
       <object>objects\objRod</object>
       <object>objects\objtemp</object>
       <object>objects\obj_egg</object>
+      <object>objects\objScore</object>
     </objects>
   </objects>
   <rooms name="rooms">
@@ -207,7 +218,6 @@
     <rooms name="CatchTheEggs">
       <room>rooms\FirstRoom</room>
       <room>rooms\room0</room>
-      <room>rooms\room1</room>
       <room>rooms\room3</room>
     </rooms>
   </rooms>
