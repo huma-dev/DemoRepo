@@ -25,10 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Home Button
-var home_butt = "";
-
-home_butt = clickable_add(x,y, sprite_get_tpe(sprite0, 0), "http://www.google.com", "_blank", "width=700, height=500, menubar=0, toolbar=0, scrollbars=0");
+            <string>url_open_full('index_fishing.html','_blank', 'resizable=0, height=200, scrollbars=0');
 </string>
           </argument>
         </arguments>

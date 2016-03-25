@@ -8,4 +8,18 @@ global.CatchTheEggsCompleted = false;
 
 // Island Intro
 global.FirstRun = true;
+global.currentLevel = 0;
+
+
+// coconut Hunt
+
+global.CoconutHuntCounter = 0;
+global.CoconutHuntScore = 0;
+global.CoconutHuntCompleted = false;
+
+// Fish Hunt
+global.FishHuntCounter = 0;
+global.FishHuntScore = 0;
+global.FishHuntCompleted = false;
+
 

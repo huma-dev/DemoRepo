@@ -3,7 +3,9 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Firebase</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="DummySprites">
@@ -47,6 +49,7 @@
       <sprite>sprites\spr_cap</sprite>
       <sprite>sprites\spr_logo</sprite>
       <sprite>sprites\spr_nextRoom</sprite>
+      <sprite>sprites\spr_hand</sprite>
     </sprites>
     <sprites name="Boat">
       <sprite>sprites\spr_boatExit</sprite>
@@ -69,11 +72,9 @@
       </sprites>
     </sprites>
     <sprites name="IntroScreens">
-      <sprite>sprites\spr_level1_L</sprite>
       <sprite>sprites\spr_level2L</sprite>
       <sprite>sprites\spr_level3L</sprite>
       <sprite>sprites\spr_level4L</sprite>
-      <sprite>sprites\spr_level1R</sprite>
       <sprite>sprites\spr_level2R</sprite>
       <sprite>sprites\spr_level3R</sprite>
       <sprite>sprites\spr_level4R</sprite>
@@ -95,14 +96,38 @@
       <sprite>sprites\spr_NateDialog</sprite>
       <sprite>sprites\spr_NateSpeaking</sprite>
     </sprites>
+    <sprites name="CoconutHunt">
+      <sprite>sprites\spr_cocoTree</sprite>
+      <sprite>sprites\spr_coconut</sprite>
+      <sprite>sprites\spr_ripeCoconut</sprite>
+      <sprite>sprites\spr_coconutCrack</sprite>
+      <sprite>sprites\spr_cocoRod</sprite>
+    </sprites>
+    <sprites name="AdmiralKevin">
+      <sprite>sprites\spr_AdmiralKevin</sprite>
+    </sprites>
+    <sprites name="FifhHunt">
+      <sprite>sprites\boat</sprite>
+      <sprite>sprites\spr_fish1</sprite>
+      <sprite>sprites\spr_fish2</sprite>
+      <sprite>sprites\spr_fish3</sprite>
+      <sprite>sprites\spr_fish4</sprite>
+      <sprite>sprites\spr_fish5</sprite>
+      <sprite>sprites\spr_fish6</sprite>
+      <sprite>sprites\spr_fishSmall</sprite>
+      <sprite>sprites\sprFlag</sprite>
+      <sprite>sprites\sprite0_new</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
     <background>background\bg_LevelMap</background>
     <background>background\bg_CatchTheEggs</background>
-    <background>background\bg_sky</background>
     <background>background\bg_Result</background>
     <background>background\bgAdmiral</background>
+    <background>background\bg_coconutHunt</background>
+    <background>background\bg_lec_2</background>
+    <background>background\bg_fishHunt</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_GameExit</path>
@@ -161,6 +186,7 @@
       <object>objects\obj_capr</object>
       <object>objects\obj_logo</object>
       <object>objects\obj_nextRoom</object>
+      <object>objects\obj_hand</object>
     </objects>
     <objects name="Buttons">
       <object>objects\obj_btn_start</object>
@@ -190,8 +216,6 @@
       <object>objects\obj_level4R</object>
       <object>objects\obj_level3R</object>
       <object>objects\obj_level2R</object>
-      <object>objects\obj_level1R</object>
-      <object>objects\obj_level1L</object>
       <object>objects\obj_level4L</object>
       <object>objects\obj_level3L</object>
       <object>objects\obj_level2L</object>
@@ -222,36 +246,52 @@
       <object>objects\objControl_AdmiralRoom</object>
       <object>objects\obj_NateLecture</object>
     </objects>
+    <objects name="CocnutHunt">
+      <object>objects\obj_CocoTree</object>
+      <object>objects\obj_coconut</object>
+      <object>objects\obj_cocoRod</object>
+      <object>objects\objControl_coco</object>
+    </objects>
+    <objects name="AdmiralKevin">
+      <object>objects\obj_KevinLecture</object>
+      <object>objects\obj_AdmiralKevin</object>
+    </objects>
+    <objects name="FishHunt">
+      <object>objects\obj_oppFish</object>
+      <object>objects\obj_OptionFish</object>
+      <object>objects\obj_smallFish</object>
+      <object>objects\objControl_2</object>
+      <object>objects\objQuestionFlag</object>
+      <object>objects\objShip</object>
+    </objects>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\timeLineIntroSailor1</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\rm_FirstRoom</room>
     <room>rooms\rm_IntroScreen</room>
     <room>rooms\rm_Island</room>
     <room>rooms\rm_IslandIntro</room>
     <room>rooms\rm_Admiral</room>
-    <room>rooms\rm_Quest</room>
+    <room>rooms\rm_KevinLecture</room>
     <room>rooms\rm_HoA</room>
     <room>rooms\rm_Exit</room>
     <room>rooms\rm_Home</room>
     <room>rooms\rm_Map</room>
-    <room>rooms\rm_SailAway</room>
     <rooms name="LevelIntro">
       <room>rooms\rm_level1</room>
       <room>rooms\rm_level2</room>
       <room>rooms\rm_level3</room>
-      <room>rooms\rm_level4</room>
     </rooms>
     <rooms name="CatchTheEggs">
-      <room>rooms\FirstRoom</room>
-      <room>rooms\room0</room>
-      <room>rooms\room3</room>
+      <room>rooms\rm_level1_game</room>
+      <room>rooms\rm_level1_result</room>
+    </rooms>
+    <rooms name="CoconutHunt">
+      <room>rooms\rm_level2_game</room>
     </rooms>
   </rooms>
-  <constants number="3">
-    <constant name="rmFleetOverView_Instructor_statement3">"To understand better, I'll show you a video that explains the concept of Software Management."</constant>
-    <constant name="rmFleetOverView_Instructor_statement2">"When I continuosly check the technical details of a module in my ship's system, i'm doing Regression Testing."</constant>
-    <constant name="rmFleetOverView_Instructor_statement1">"Hello , I'll teach you Software Project Management Skills"</constant>
-  </constants>
   <help>
     <rtf>help.rtf</rtf>
   </help>

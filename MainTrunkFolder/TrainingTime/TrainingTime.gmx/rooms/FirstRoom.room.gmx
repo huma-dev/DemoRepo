@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>room_goto(room0);</code>
+  <code>global.currentLevel = 1;
+room_goto(rm_level1_game);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <makerSettings>
@@ -60,3 +61,4 @@
   <PhysicsWorldGravityY>10</PhysicsWorldGravityY>
   <PhysicsWorldPixToMeters>0.100000001490116</PhysicsWorldPixToMeters>
 </room>
+	

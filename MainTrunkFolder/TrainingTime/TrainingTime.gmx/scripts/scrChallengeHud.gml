@@ -7,7 +7,7 @@ draw_set_font(font2);
 
 var cstr;
 cstr=string_copy(messageText,1,pos);
-
+draw_sprite_ext(sprStartChallengeButton, 0, window_get_width()/1.7, window_get_height()/1.5, 0.5, 0.5, 0, c_white, 1);
 draw_text_ext_transformed(window_get_width()/6,window_get_height()/5, cstr,18,400, 1,1, 0);
 pos += 0.5;
 var numOfChar;

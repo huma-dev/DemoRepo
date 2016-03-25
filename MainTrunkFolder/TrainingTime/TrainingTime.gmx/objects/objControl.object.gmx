@@ -26,8 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>// get Answers
+switch (global.currentLevel)
+{  
+case 1:  ansString = scr_options(global.CacthTheEggCounter);
+break;
+case 2: ansString = scr_options(global.CoconutHuntCounter);
+break;
+case 3: break;
+}
 
-ansString = scr_options(global.CacthTheEggCounter);
 optionsArray = scr_explodeString(ansString);
 
 
@@ -50,7 +57,21 @@ for (i = 0 ; i &lt;=3 ; i++ )
     opt = optionsArray[i] ;
     
      varX = i*quarterWidth +10;
-   inst[i]= instance_create( varX, varY, obj_egg);
+     switch (global.currentLevel)
+     { 
+     case 1:
+    { inst[i]= instance_create( varX, varY, obj_egg);
+       break;
+       }
+     case 2: 
+     {
+     inst[i]= instance_create( varX, varY, obj_egg);
+     show_message("objControl line 41");
+     break;
+     }
+     
+     }
+   //inst[i]= instance_create( varX, varY, obj_egg);
    with(inst[i])
    {      
        if (objControl.i+1 == objControl.correctAns)

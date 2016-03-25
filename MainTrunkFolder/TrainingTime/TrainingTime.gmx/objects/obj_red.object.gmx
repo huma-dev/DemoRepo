@@ -55,7 +55,8 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_level3);
+            <string>global.currentLevel = 1;
+room_goto(rm_level1);
 </string>
           </argument>
         </arguments>
