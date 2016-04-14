@@ -68,8 +68,10 @@ var cstr
 if (conversationCount &lt;=2)
 {
 numOfChar2 = 0;
+
 if (objControl_AdmiralRoom.nextStatement == true)
 {
+pos2=0;
 objControl_AdmiralRoom.nextStatement = false;
 conversationCount += 1;
 }

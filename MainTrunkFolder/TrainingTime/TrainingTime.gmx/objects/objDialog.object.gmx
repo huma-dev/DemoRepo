@@ -55,8 +55,9 @@ alarm[0] = 30 * 3;
           <argument>
             <kind>1</kind>
             <string>//show_message("alarmTriggered");
+/*
 objControl_AdmiralRoom.nextStatement = true;
-objNate.image_speed = 1 ;
+objNate.image_speed = 1 ;*/
 </string>
           </argument>
         </arguments>
@@ -115,7 +116,7 @@ image_alpha += 0.05;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (obj_NateLecture.conversationCount &lt;=3)
+            <string>if (obj_NateLecture.conversationCount &lt;=2)
 {
 
 objControl_AdmiralRoom.nextStatement = true;
