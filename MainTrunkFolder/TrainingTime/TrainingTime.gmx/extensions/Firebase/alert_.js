@@ -42,7 +42,30 @@ function setUserInfo(){
 });
 }
 	
-function getUserInfo(user){
+function getUserInfo(user, pass){
+	/*
+	var myFirebaseRef = new Firebase("https://gmdemoapp.firebaseio.com");
+	myFirebaseRef.child("location/city").on("value", function(snapshot) {
+  alert(snapshot.val());  // Alerts "San Francisco"
+});
+*/
+var data = null;
+var key = null;
+var ref = new Firebase("https://gmdemoapp.firebaseio.com/user");
+ref.orderByChild("loginName").equalTo(user).on("child_added", function(snapshot) {
+  if (pass == snapshot.val().password)
+  {
+	  console.log("verified");
+      return "valid";
+  }
+  else
+  {
+	  console.log("invalid");
+	  return "invalid";}
+});
+}
+
+function getUserScore(user, level){
 	/*
 	var myFirebaseRef = new Firebase("https://gmdemoapp.firebaseio.com");
 	myFirebaseRef.child("location/city").on("value", function(snapshot) {
@@ -54,6 +77,12 @@ var key = null;
 var ref = new Firebase("https://gmdemoapp.firebaseio.com/user");
 ref.orderByChild("loginName").equalTo(user).on("child_added", function(snapshot) {
   console.log( snapshot.child("score/level1").val());
+  if (level == "1")
+  return snapshot.child("score/level1").val();
+  if (level == "2")
+  return snapshot.child("score/level2").val();
+  if (level == "3")
+  return snapshot.child("score/level3").val();
   
 });
 }

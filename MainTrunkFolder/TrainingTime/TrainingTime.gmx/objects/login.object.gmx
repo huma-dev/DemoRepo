@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>loginname = get_string("Enter the login username","") //User enters the username
 loginpass = get_string("Enter the password for " + string(loginname),"") //User enter the password for the username
-
+/*
 ini_open("login.ini") //open the file with the password and user account
 if not ini_section_exists(string(loginname)) //if the login name is non existant...
     {
@@ -48,6 +48,18 @@ if ini_section_exists(string(loginname)) //If the login name exists...
     {
     show_message("Password invalid.") //Tell the person, that the password is incorrect.
     }
+}*/
+
+info= getUserInfo(loginname, loginpass);
+
+if (info == "valid")
+{
+ show_message("Login Succesful") //Show this message
+   
+}
+else 
+{
+show_message("Invalid Login credentials.") //Tell the person, that the password is incorrect.
 }
 </string>
           </argument>
