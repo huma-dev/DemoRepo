@@ -33,7 +33,15 @@ ini_open("login.ini")
 ini_write_string(string(newname),"password",string(newpass)) //Make a file with the username and password data
 ini_close()
 
+info = createUser(newname, newpass);
+if (info== "valid")
+{
 show_message("Account created!##Username: " + string(newname) + "#Password: " + string(newpass)) //Tell the person the information he/she just entered
+}
+else
+ {
+  show_message("Error while creating account. #Check your Internet and enter a new username.");
+ }
 </string>
           </argument>
         </arguments>

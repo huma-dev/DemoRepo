@@ -278,17 +278,17 @@
     <timeline>timelines\timeLineIntroSailor1</timeline>
   </timelines>
   <rooms name="rooms">
-    <room>rooms\rm_login</room>
     <room>rooms\rm_FirstRoom</room>
+    <room>rooms\rm_login</room>
     <room>rooms\rm_IntroScreen</room>
     <room>rooms\rm_Island</room>
     <room>rooms\rm_IslandIntro</room>
     <room>rooms\rm_Admiral</room>
     <room>rooms\rm_KevinLecture</room>
     <room>rooms\rm_HoA</room>
-    <room>rooms\rm_Exit</room>
     <room>rooms\rm_Home</room>
     <room>rooms\rm_Map</room>
+    <room>rooms\rm_Exit</room>
     <rooms name="LevelIntro">
       <room>rooms\rm_level1</room>
       <room>rooms\rm_level2</room>

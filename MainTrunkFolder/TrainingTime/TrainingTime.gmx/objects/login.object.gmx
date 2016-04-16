@@ -25,41 +25,30 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>loginname = get_string("Enter the login username","") //User enters the username
-loginpass = get_string("Enter the password for " + string(loginname),"") //User enter the password for the username
-/*
-ini_open("login.ini") //open the file with the password and user account
-if not ini_section_exists(string(loginname)) //if the login name is non existant...
+            <string>if os_is_network_connected()
     {
-    show_message("Login or password is invalid#Please re-enter or create a new account") //Show this message
-    ini_close() //End the file
-    }
+    
 
-ini_open("login.ini")
-if ini_section_exists(string(loginname)) //If the login name exists...
-{
- foundpass = ini_read_string(string(loginname),"password",0) // Get the password from the file
-    if foundpass = loginpass //If the password from the file is that same as the one entered...
-    {
-    show_message("Login successful") //Show a message saying your login was successfull
-    game_end() //Then end the game.
-    }
-    else //If the login is correct but the password isnt...
-    {
-    show_message("Password invalid.") //Tell the person, that the password is incorrect.
-    }
-}*/
+loginname = get_string("Enter the login username","") //User enters the username
+loginpass = get_string("Enter the password for " + string(loginname),"") //User enter the password for the username
 
 info= getUserInfo(loginname, loginpass);
 
 if (info == "valid")
 {
  show_message("Login Succesful") //Show this message
-   
+room_goto_next();   
 }
 else 
 {
 show_message("Invalid Login credentials.") //Tell the person, that the password is incorrect.
+}
+
+}
+else
+{
+show_message("Please Check your internet connection")
+
 }
 </string>
           </argument>
