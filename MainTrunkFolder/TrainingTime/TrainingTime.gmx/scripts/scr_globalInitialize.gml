@@ -23,3 +23,12 @@ global.FishHuntScore = 0;
 global.FishHuntCompleted = false;
 
 
+// Ship Game
+global.ShipGameCounter = 0;
+global.ShipGameScore = 0;
+global.ShipGameCompleted = false;
+
+//Lecture
+global.lectureText = 0;
+
+

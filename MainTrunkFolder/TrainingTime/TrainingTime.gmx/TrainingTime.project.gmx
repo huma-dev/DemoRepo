@@ -51,6 +51,10 @@
       <sprite>sprites\spr_logo</sprite>
       <sprite>sprites\spr_nextRoom</sprite>
       <sprite>sprites\spr_hand</sprite>
+      <sprite>sprites\sprBomb</sprite>
+      <sprite>sprites\sprBombBody</sprite>
+      <sprite>sprites\sprBombRope</sprite>
+      <sprite>sprites\sprFlame</sprite>
     </sprites>
     <sprites name="Boat">
       <sprite>sprites\spr_boatExit</sprite>
@@ -123,11 +127,21 @@
       <sprite>sprites\spr_Login</sprite>
       <sprite>sprites\spr_NewUser</sprite>
     </sprites>
+    <sprites name="FinalShip">
+      <sprite>sprites\spr_Ship1</sprite>
+      <sprite>sprites\spr_Ship2</sprite>
+      <sprite>sprites\spr_Ship3</sprite>
+    </sprites>
+    <sprites name="selectLecture">
+      <sprite>sprites\spr_lec1</sprite>
+      <sprite>sprites\spr_lec2</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
     <background>background\bg_LevelMap</background>
     <background>background\bg_CatchTheEggs</background>
+    <background>background\bg_CatchEggs2</background>
     <background>background\bg_Result</background>
     <background>background\bgAdmiral</background>
     <background>background\bg_coconutHunt</background>
@@ -157,6 +171,8 @@
     <scripts name="IslandIntro">
       <script>scripts\scrChallengeHud.gml</script>
     </scripts>
+    <script>scripts\scr_getLecture.gml</script>
+    <script>scripts\scr_getSlides.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -193,6 +209,12 @@
       <object>objects\obj_logo</object>
       <object>objects\obj_nextRoom</object>
       <object>objects\obj_hand</object>
+      <object>objects\objBombRope</object>
+      <object>objects\objBombRopeHorizontal</object>
+      <object>objects\objClock</object>
+      <object>objects\objFlame</object>
+      <object>objects\objBomb</object>
+      <object>objects\objParchment2</object>
     </objects>
     <objects name="Buttons">
       <object>objects\obj_btn_start</object>
@@ -273,6 +295,14 @@
       <object>objects\login</object>
       <object>objects\new_user</object>
     </objects>
+    <objects name="FinalShip">
+      <object>objects\obj_ship_part1</object>
+      <object>objects\obj_ship_Part2</object>
+      <object>objects\obj_Ship_part3</object>
+    </objects>
+    <objects name="selectLec">
+      <object>objects\obj_lec1</object>
+    </objects>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\timeLineIntroSailor1</timeline>
@@ -284,6 +314,7 @@
     <room>rooms\rm_Island</room>
     <room>rooms\rm_IslandIntro</room>
     <room>rooms\rm_Admiral</room>
+    <room>rooms\rm_selectLEcture</room>
     <room>rooms\rm_KevinLecture</room>
     <room>rooms\rm_HoA</room>
     <room>rooms\rm_Home</room>
@@ -301,6 +332,11 @@
     <rooms name="CoconutHunt">
       <room>rooms\rm_level2_game</room>
     </rooms>
+    <rooms name="ShipGame">
+      <room>rooms\rm_level3_game</room>
+      <room>rooms\rm_level3_game_new</room>
+    </rooms>
+    <room>rooms\rm_FinalShip</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

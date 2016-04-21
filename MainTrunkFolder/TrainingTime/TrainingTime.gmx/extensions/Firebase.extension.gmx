@@ -85,6 +85,17 @@
             <arg>1</arg>
           </args>
         </function>
+        <function>
+          <name>getLecture</name>
+          <externalName>getLecture</externalName>
+          <kind>11</kind>
+          <help></help>
+          <returnType>1</returnType>
+          <argCount>1</argCount>
+          <args>
+            <arg>1</arg>
+          </args>
+        </function>
       </functions>
       <constants/>
     </file>
