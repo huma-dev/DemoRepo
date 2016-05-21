@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//var username = scr_getItem("player");
+            <string>///room_goto(rm_Island);
+//var username = scr_getItem("player");
 
 
 

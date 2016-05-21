@@ -100,6 +100,8 @@
       <sprite>sprites\sprAdmiralNate</sprite>
       <sprite>sprites\spr_NateDialog</sprite>
       <sprite>sprites\spr_NateSpeaking</sprite>
+      <sprite>sprites\spr_Chair</sprite>
+      <sprite>sprites\spr_table</sprite>
     </sprites>
     <sprites name="CoconutHunt">
       <sprite>sprites\spr_cocoTree</sprite>
@@ -136,6 +138,13 @@
       <sprite>sprites\spr_lec1</sprite>
       <sprite>sprites\spr_lec2</sprite>
     </sprites>
+    <sprites name="Hall Of Acheivements">
+      <sprite>sprites\spr_videoIcon</sprite>
+      <sprite>sprites\spr_vid2</sprite>
+      <sprite>sprites\spr_TreasureChest</sprite>
+      <sprite>sprites\spr_BoxOfWonders</sprite>
+      <sprite>sprites\spr_HOA</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_map</background>
@@ -147,6 +156,7 @@
     <background>background\bg_coconutHunt</background>
     <background>background\bg_lec_2</background>
     <background>background\bg_fishHunt</background>
+    <background>background\bg_HOA</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_GameExit</path>
@@ -155,6 +165,7 @@
     <path>paths\pthPointedHand</path>
   </paths>
   <scripts name="scripts">
+    <script>scripts\scr_globalInitialize.gml</script>
     <script>scripts\scr_PlayerMovement.gml</script>
     <script>scripts\scr_saveItem.gml</script>
     <script>scripts\scr_getItem.gml</script>
@@ -163,7 +174,6 @@
     <scripts name="CatchTheEggs">
       <script>scripts\scr_Boolean.gml</script>
       <script>scripts\scr_explodeString.gml</script>
-      <script>scripts\scr_globalInitialize.gml</script>
       <script>scripts\scr_options.gml</script>
       <script>scripts\scr_question.gml</script>
       <script>scripts\scr_wrapText.gml</script>
@@ -180,6 +190,12 @@
     <font>fonts\font2</font>
   </fonts>
   <objects name="objects">
+    <objects name="CocnutHunt">
+      <object>objects\obj_CocoTree</object>
+      <object>objects\obj_coconut</object>
+      <object>objects\obj_cocoRod</object>
+      <object>objects\objControl_coco</object>
+    </objects>
     <objects name="DummyObjects">
       <object>objects\object0</object>
       <object>objects\object1</object>
@@ -214,7 +230,6 @@
       <object>objects\objClock</object>
       <object>objects\objFlame</object>
       <object>objects\objBomb</object>
-      <object>objects\objParchment2</object>
     </objects>
     <objects name="Buttons">
       <object>objects\obj_btn_start</object>
@@ -272,12 +287,8 @@
       <object>objects\objDialog</object>
       <object>objects\objControl_AdmiralRoom</object>
       <object>objects\obj_NateLecture</object>
-    </objects>
-    <objects name="CocnutHunt">
-      <object>objects\obj_CocoTree</object>
-      <object>objects\obj_coconut</object>
-      <object>objects\obj_cocoRod</object>
-      <object>objects\objControl_coco</object>
+      <object>objects\obj_chair</object>
+      <object>objects\objTable</object>
     </objects>
     <objects name="AdmiralKevin">
       <object>objects\obj_KevinLecture</object>
@@ -302,6 +313,14 @@
     </objects>
     <objects name="selectLec">
       <object>objects\obj_lec1</object>
+      <object>objects\objParchment2</object>
+    </objects>
+    <objects name="Hall of Acheivements">
+      <object>objects\obj_vid1</object>
+      <object>objects\obj_vid2</object>
+      <object>objects\obj_BoxOfWonders</object>
+      <object>objects\obj_TreasureChest</object>
+      <object>objects\obj_HOA</object>
     </objects>
   </objects>
   <timelines name="timelines">
@@ -313,8 +332,8 @@
     <room>rooms\rm_IntroScreen</room>
     <room>rooms\rm_Island</room>
     <room>rooms\rm_IslandIntro</room>
-    <room>rooms\rm_Admiral</room>
     <room>rooms\rm_selectLEcture</room>
+    <room>rooms\rm_Admiral</room>
     <room>rooms\rm_KevinLecture</room>
     <room>rooms\rm_HoA</room>
     <room>rooms\rm_Home</room>

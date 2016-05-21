@@ -30,5 +30,9 @@ global.ShipGameCompleted = false;
 
 //Lecture
 global.lectureText = 0;
-
+global.lecture1 = "null";
+global.lecture1finished= false;
+global.lecture2finished = false;
+global.video1Watched = false;
+global.video2Watched = false;
 

@@ -26,10 +26,94 @@
           <argument>
             <kind>1</kind>
             <string>///NAte's code  
+//show_message("Nate's code");
 conversationCount = 0 ;
 pos2 = 0;
 numOfChar2=0;
 stopConv = false;
+// lectureContent = scr_getLecture("lecture1");
+
+//show_message(lectureContent[1]);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*if(lectureContent)
+{
+show_message("lec is here");
+// draw the text
+
+}
+
+else 
+
+{
+// wait for content to come.
+
+}
+*/
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="62">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*lectureContent  = getLecture("lecture1");
+show_message(lectureContent);
+
+var str;
+str = "lecture1"
+get[0] = http_post_string("https://gmdemoapp.firebaseio.com/lecture1/slide1", "null");
+
+
+if ds_map_find_value(async_load, "id") == get[0]
+    {
+    if ds_map_find_value(async_load, "status") &gt;= 0
+       {
+       r_str = ds_map_find_value(async_load, "result");
+      show_message(r_str);
+        }
+    else
+       {
+       r_str = "null";
+        show_message("r_str");
+       }
+    }
+    */
 </string>
           </argument>
         </arguments>
@@ -52,7 +136,7 @@ stopConv = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Nate's code  
+            <string>  ///Nate's code  
 if (!objControl_AdmiralRoom.stopConv)
 {
 draw_set_color(c_black);
@@ -64,8 +148,9 @@ a[1] = rmFleetOverView_Instructor_statement2 ;
 a[2] = rmFleetOverView_Instructor_statement3;
 a[3] = "Tap to Watch Video"
 
-var cstr
-if (conversationCount &lt;=2)
+var cstr;
+var numOfSlides = array_length_1d(global.lectureText);
+if (conversationCount &lt;= numOfSlides)
 {
 numOfChar2 = 0;
 
@@ -76,7 +161,7 @@ objControl_AdmiralRoom.nextStatement = false;
 conversationCount += 1;
 }
 i = conversationCount;
-msg = string(a[i]);
+msg = string(global.lectureText[i]);
 cstr=string_copy(msg,1,pos2);
 pos2+=0.5;
 draw_text_ext(x,y, cstr,23, 250);

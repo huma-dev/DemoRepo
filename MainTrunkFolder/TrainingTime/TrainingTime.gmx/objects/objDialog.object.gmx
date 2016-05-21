@@ -129,6 +129,7 @@ objControl_AdmiralRoom.stopConv = true;
 
 if (objControl_AdmiralRoom.stopConv)
 {
+global.lecture1finished = true;
 url_open_ext( 'http://yoyogames.com', '_blank');
 //instance_create(
 // create goto hatchery conv

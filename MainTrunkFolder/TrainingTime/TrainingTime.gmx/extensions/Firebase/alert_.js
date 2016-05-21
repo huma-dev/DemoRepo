@@ -121,13 +121,13 @@ function getTotalQuestions(level){
 
 }
 function  getLecture(lecName)
-{
+{	var lecText;
 	var myFirebaseRef = new Firebase("https://gmdemoapp.firebaseio.com/"+lecName);
 	myFirebaseRef.once("value", function(snapshot) {
 	var a = snapshot.numChildren()
 	 console.log("num of slidef of the lec = "+a);
 	
-	var lecText;
+
 	//lecText += snapshot.child("slide1"+i);
 	for (i = 1; i <=  a ; i ++)
 	{
@@ -135,6 +135,7 @@ function  getLecture(lecName)
 		
 	}
 	console.log(lecText);
-	return lecText;
+
 	});
+		return lecText;
 }
