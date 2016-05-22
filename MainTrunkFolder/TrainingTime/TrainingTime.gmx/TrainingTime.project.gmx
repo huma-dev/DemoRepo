@@ -27,6 +27,9 @@
       <sprite>sprites\spr_waterfall1</sprite>
       <sprite>sprites\spr_tree5</sprite>
       <sprite>sprites\spr_ParchmentChallenge</sprite>
+      <sprite>sprites\spr_house1_label</sprite>
+      <sprite>sprites\spr_house2_label</sprite>
+      <sprite>sprites\spr_map_label</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_front</sprite>
@@ -214,6 +217,9 @@
       <object>objects\obj_tree5</object>
       <object>objects\objBoatExit</object>
       <object>objects\objControl_Island</object>
+      <object>objects\obj_house1_label</object>
+      <object>objects\obj_house2_label</object>
+      <object>objects\obj_house3_label</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_player1</object>
@@ -293,6 +299,7 @@
     <objects name="AdmiralKevin">
       <object>objects\obj_KevinLecture</object>
       <object>objects\obj_AdmiralKevin</object>
+      <object>objects\obj_KevinLec2</object>
     </objects>
     <objects name="FishHunt">
       <object>objects\obj_oppFish</object>
@@ -313,6 +320,7 @@
     </objects>
     <objects name="selectLec">
       <object>objects\obj_lec1</object>
+      <object>objects\obj_Lec2</object>
       <object>objects\objParchment2</object>
     </objects>
     <objects name="Hall of Acheivements">
@@ -332,6 +340,7 @@
     <room>rooms\rm_IntroScreen</room>
     <room>rooms\rm_Island</room>
     <room>rooms\rm_IslandIntro</room>
+    <room>rooms\rm_IslandInBetween</room>
     <room>rooms\rm_selectLEcture</room>
     <room>rooms\rm_Admiral</room>
     <room>rooms\rm_KevinLecture</room>

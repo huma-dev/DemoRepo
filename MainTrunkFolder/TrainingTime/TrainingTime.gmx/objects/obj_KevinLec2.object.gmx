@@ -149,8 +149,8 @@ a[2] = rmFleetOverView_Instructor_statement3;
 a[3] = "Tap to Watch Video"
 
 var cstr;
-//var numOfSlides = array_length_1d(global.lectureText);
-if (conversationCount &lt;= 3)
+var numOfSlides = array_length_1d(global.lectureText);
+if (conversationCount &lt;= numOfSlides)
 {
 numOfChar2 = 0;
 
@@ -161,8 +161,7 @@ objControl_AdmiralRoom.nextStatement = false;
 conversationCount += 1;
 }
 i = conversationCount;
-//msg = string(global.lectureText[i]);
-msg = string(a[i]);
+msg = string(global.lectureText[i]);
 cstr=string_copy(msg,1,pos2);
 pos2+=0.5;
 draw_text_ext(x,y, cstr,23, 250);

@@ -50,14 +50,15 @@
             <kind>1</kind>
             <string>image_speed = 0;
 image_index = 1;
-
+if (global.FirstRun)
+{
 with (obj_player1)
 {
 
 image_speed = 0.5;
 path_start(pthBoy,2,0,false);
 
-
+}
 }
 </string>
           </argument>

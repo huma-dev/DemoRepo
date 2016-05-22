@@ -13,7 +13,7 @@
   <code>scr_globalInitialize();
 //global.lecture1 = getLecture("lecture1");
 room_goto(rm_login);
-//room_goto(rm_Admiral);</code>
+//room_goto(rm_KevinLecture);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <makerSettings>

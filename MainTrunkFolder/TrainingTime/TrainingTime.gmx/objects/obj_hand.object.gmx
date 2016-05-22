@@ -26,7 +26,15 @@
           <argument>
             <kind>1</kind>
             <string>i=0;
+
+if(global.FirstRun)
+{
 path_start(pthPointedHand,1,3,false);
+}
+else
+{
+instance_destroy();
+}
 </string>
           </argument>
         </arguments>
