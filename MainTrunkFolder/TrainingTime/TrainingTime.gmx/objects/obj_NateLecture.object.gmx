@@ -31,45 +31,9 @@ conversationCount = 0 ;
 pos2 = 0;
 numOfChar2=0;
 stopConv = false;
-// lectureContent = scr_getLecture("lecture1");
+ lectureContent = scr_getLecFromFile();
 
 //show_message(lectureContent[1]);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="1">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*if(lectureContent)
-{
-show_message("lec is here");
-// draw the text
-
-}
-
-else 
-
-{
-// wait for content to come.
-
-}
-*/
 </string>
           </argument>
         </arguments>
@@ -137,20 +101,46 @@ if ds_map_find_value(async_load, "id") == get[0]
           <argument>
             <kind>1</kind>
             <string>  ///Nate's code  
+draw_set_color(c_black);
 if (!objControl_AdmiralRoom.stopConv)
 {
-draw_set_color(c_black);
+
 
 //FleetOverView
 //a[0]= rmFleetOverView_Instructor_statement1;
-a[0] = rmFleetOverView_Instructor_statement1;
-a[1] = rmFleetOverView_Instructor_statement2 ;
-a[2] = rmFleetOverView_Instructor_statement3;
-a[3] = "Tap to Watch Video"
+a[0] = "What is a Project ?# 
+Project Management Institute* definition:#"
+a[1]= "It is a temporary endeavour (having specific start and completion dates) undertaken to create a unique product or service.
+";
+a[2] = "What is Project Management ?#"
+a[3]= "It is the discipline of planning, organizing, and managing resources to bring about the successful completion of specific project goals and objectives.
+" ;
+a[4] = "Project management Comprises of mainly 3 things:
+";
+a[5] = "Feasibility study – Assess whether a project is worth of starting – has it a valid business case#"
+a[6] ="#Planning – Happens if feasibility study indicates that the prospective project appears viable #"
+a[7] = "#Project execution – The plan indicates the activities carried out to create the product.#"
 
+a[8] = "#Stakeholders
+#People who have a stake or interest in the project – Identify as early as possible – Set up adequate communication channel.
+";
+a[9] =  "Stakeholder groups – Internal to the project – External to the project team but within the same organisation" 
+a[10]= "#– External to both the project team and the organisation.
+";
+a[11] = "Effective objective – something that is within the control.
+"
+a[12] = "#– Specific – concrete and well defined • “to reduce customer complains” • “to improve customer relations”#"
+a[13] ="– Measurable – measures of effectiveness which tell how successful the project has been • “To reduce customer complains”
+"
+a[14] ="#– Achievable – within the power to achieve • by individual or group "
+a[15] = "#– Relevant – to the true purpose of the project"
+a[16] = "#– Time constrained – a definite point in time by which the objective should have been achieved.
+"; 
+a[17] = "Project Manager#Work, Quality,Human Resources,Time, Communications,Costs."
+a[18] = "Click to wacth video";
 var cstr;
-//var numOfSlides = array_length_1d(global.lectureText);
-if (conversationCount &lt;= 3)
+var numOfSlides = array_length_1d(global.lectureText);
+if (conversationCount &lt;= 18)
 {
 numOfChar2 = 0;
 
@@ -169,7 +159,7 @@ draw_text_ext(x,y, cstr,23, 250);
 
  totalChar = string_length(msg);
  numOfChar2 = string_length(cstr);
-        if(numOfChar2 = totalChar)
+        if(numOfChar2 == totalChar)
         {
         objNate.image_speed  = 0;
         }
@@ -180,7 +170,6 @@ draw_text_ext(x,y, cstr,23, 250);
 }
 else {
 objControl_AdmiralRoom.stopConv = true;
-//show_message("open Video");
 }
 }
 </string>

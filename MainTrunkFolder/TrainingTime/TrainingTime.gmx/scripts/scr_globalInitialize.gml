@@ -9,6 +9,7 @@ global.CatchTheEggsCompleted = false;
 // Island Intro
 global.FirstRun = true;
 global.currentLevel = 0;
+global.showHand = true;
 
 
 // coconut Hunt
@@ -35,4 +36,7 @@ global.lecture1finished= false;
 global.lecture2finished = false;
 global.video1Watched = false;
 global.video2Watched = false;
+
+//User
+global.currentUser = "null";
 

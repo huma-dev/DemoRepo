@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>question = scr_question(global.CacthTheEggCounter);
+            <string>if (room== rm_level2_game)
+{question = scr_question(global.CoconutHuntCounter);}
+else
+{
+question = scr_question(global.CacthTheEggCounter);
+}
 //show_message(question);
 
 </string>

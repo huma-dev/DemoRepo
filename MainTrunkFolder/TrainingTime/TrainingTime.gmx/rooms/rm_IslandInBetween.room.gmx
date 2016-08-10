@@ -53,7 +53,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_house1" x="295" y="59" name="inst_1F0EA074" locked="0" code="" scaleX="0.600000023841858" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_house1" x="284" y="67" name="inst_1F0EA074" locked="0" code="" scaleX="0.600000023841858" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_houseMap" x="416" y="169" name="inst_90DB0799" locked="0" code="" scaleX="0.522988021373749" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_house3" x="129" y="174" name="inst_49B9279A" locked="0" code="" scaleX="0.5625" scaleY="0.514423072338104" colour="4294967295" rotation="0"/>
     <instance objName="obj_Lighthouse" x="507" y="170" name="inst_55BE2153" locked="0" code="" scaleX="0.455056011676788" scaleY="0.442196995019913" colour="4294967295" rotation="0"/>
@@ -83,7 +83,7 @@
     <instance objName="obj_tree3" x="289" y="64" name="inst_AC5CE8EA" locked="0" code="" scaleX="0.579710006713867" scaleY="0.616822004318237" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree3" x="261" y="88" name="inst_E54E575C" locked="0" code="" scaleX="0.558823525905609" scaleY="0.560747683048248" colour="4294967295" rotation="0"/>
     <instance objName="obj_nextRoom" x="436" y="387" name="inst_DC6D91E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_player1" x="275" y="143" name="inst_D3F71160" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_player_front" x="292" y="153" name="inst_D71BD7E6" locked="0" code="" scaleX="0.16666667163372" scaleY="0.129310339689255" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

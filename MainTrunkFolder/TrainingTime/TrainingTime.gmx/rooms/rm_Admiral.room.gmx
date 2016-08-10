@@ -55,8 +55,10 @@
     <instance objName="objTable" x="470" y="390" name="inst_F0BB0774" locked="0" code="" scaleX="0.84375" scaleY="0.65217399597168" colour="4294967295" rotation="0"/>
     <instance objName="obj_chair" x="495" y="335" name="inst_52B2222C" locked="0" code="" scaleX="0.640523016452789" scaleY="0.597315013408661" colour="4294967295" rotation="0"/>
     <instance objName="obj_home" x="20" y="375" name="inst_8D24FD21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_back" x="245" y="285" name="inst_B65B6C4F" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="obj_NateLecture" x="240" y="215" name="inst_5E962986" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objNate" x="105" y="205" name="inst_695E2E71" locked="0" code="" scaleX="0.800000011920929" scaleY="0.735632002353668" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Front" x="360" y="285" name="inst_204E2EE5" locked="0" code="" scaleX="0.25" scaleY="0.25" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -25,9 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//instance_create(0, 0, objTestChallenge);
+            <string>///instance_create(0, 0, objTestHud);
 instance_create(0, 0, objTestHud);
-
 
 </string>
           </argument>
@@ -52,8 +51,9 @@ instance_create(0, 0, objTestHud);
           <argument>
             <kind>1</kind>
             <string>//draw_sprite_ext(sprStartChallengeButton, 0, window_get_width()/1.7, window_get_height()/1.5, 0.5, 0.5, 0, c_white, 1);
-//room_goto(rm_Island);
-instance_create(window_get_width()/1.7, window_get_height()/3, obj_StartChallenge);
+
+//instance_create(window_get_width()/1.7, window_get_height()/3, obj_StartChallenge);
+
 </string>
           </argument>
         </arguments>

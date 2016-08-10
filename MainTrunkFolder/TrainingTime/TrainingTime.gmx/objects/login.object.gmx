@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="6" enumb="4">
+    <event eventtype="6" enumb="7">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,79 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*if os_is_network_connected()
+            <string> if (os_is_network_connected())
     {
+    u = get_string("Login Name", "Anonymous"); 
+ p = get_string("Login Name:"+u+"# Password:", "Anonymous"); 
+ 
+ createUser(u,p);
+global.currentUser = u;  
+ }
 
-//get_login_async(loginname, loginPass);
-loginname = get_string("Enter the login username","") //User enters the username
-loginpass = get_string("Enter the password for " + string(loginname),"") //User enter the password for the username
-
-info= getUserInfo(loginname, loginpass);
-show_message(info);
-if (info == "valid")
-{
- show_message("Login Succesful") //Show this message
-room_goto(rm_IntroScreen);
-}
-else 
-{
-show_message("Invalid Login credentials.") //Tell the person, that the password is incorrect.
-}
-
-}
-else
-{
-show_message("Please Check your internet connection")
-
-}
-*/
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*
-if os_is_network_connected()
-    {
-loginname = get_string("Enter the login username","") //User enters the username
-loginpass = get_string("Enter the password for " + string(loginname),"") //User enter the password for the username
-
-newlogin = get_login_async(loginname, loginPass);
-
-info = getUserInfo(loginname, loginpass);
-show_message(info);
-if (info == "valid")
-{
- show_message("Login Succesful") //Show this message
-room_goto(rm_IntroScreen);
-}
-else 
-{
-show_message("Invalid Login credentials.") //Tell the person, that the password is incorrect.
-}
-
-}
-else
-{
-show_message("Please Check your internet connection")
-
-}
-*/
 room_goto_next();
 </string>
           </argument>

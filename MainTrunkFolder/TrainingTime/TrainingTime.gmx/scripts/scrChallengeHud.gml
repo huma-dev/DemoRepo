@@ -18,6 +18,6 @@ if(numOfChar = totalChar)
 {
 //audio_stop_sound(sndType);
 //sound_stop_all();
-
+instance_create( window_get_width()/1.7, window_get_height()/1.5, obj_StartChallenge);
 //draw_sprite_ext(sprStartChallengeButton, 0, window_get_width()/1.7, window_get_height()/1.5, 0.5, 0.5, 0, c_white, 1);
 }

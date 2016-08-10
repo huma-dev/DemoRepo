@@ -53,6 +53,7 @@
     <instance objName="objParchment2" x="40" y="25" name="inst_9E653101" locked="0" code="" scaleX="1" scaleY="1.32352995872498" colour="4294967295" rotation="0"/>
     <instance objName="obj_lec1" x="100" y="220" name="inst_82203A85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Lec2" x="325" y="220" name="inst_D9916AFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_home" x="0" y="375" name="inst_38F719F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

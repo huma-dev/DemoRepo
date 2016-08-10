@@ -3,9 +3,29 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="2" name="datafiles"/>
+  <datafiles number="3" name="datafiles">
+    <datafile>
+      <name>SPM.txt</name>
+      <exists>-1</exists>
+      <size>1599</size>
+      <exportAction>2</exportAction>
+      <exportDir></exportDir>
+      <overwrite>0</overwrite>
+      <freeData>-1</freeData>
+      <removeEnd>0</removeEnd>
+      <store>0</store>
+      <ConfigOptions>
+        <Config name="Default">
+          <CopyToMask>9223372036854775807</CopyToMask>
+        </Config>
+      </ConfigOptions>
+      <filename></filename>
+    </datafile>
+  </datafiles>
   <NewExtensions>
     <extension index="0">extensions\Firebase</extension>
+    <extension index="1">extensions\createUser</extension>
+    <extension index="2">extensions\setUserScore</extension>
   </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -30,6 +50,7 @@
       <sprite>sprites\spr_house1_label</sprite>
       <sprite>sprites\spr_house2_label</sprite>
       <sprite>sprites\spr_map_label</sprite>
+      <sprite>sprites\spr_ChallengeHud</sprite>
     </sprites>
     <sprites name="Player">
       <sprite>sprites\spr_player_front</sprite>
@@ -48,6 +69,8 @@
       <sprite>sprites\spr_btn_go</sprite>
       <sprite>sprites\spr_close</sprite>
       <sprite>sprites\spr_Continue</sprite>
+      <sprite>sprites\spr_Back</sprite>
+      <sprite>sprites\spr_Front</sprite>
     </sprites>
     <sprites name="Extras">
       <sprite>sprites\spr_cap</sprite>
@@ -153,7 +176,6 @@
     <background>background\bg_map</background>
     <background>background\bg_LevelMap</background>
     <background>background\bg_CatchTheEggs</background>
-    <background>background\bg_CatchEggs2</background>
     <background>background\bg_Result</background>
     <background>background\bgAdmiral</background>
     <background>background\bg_coconutHunt</background>
@@ -186,6 +208,7 @@
     </scripts>
     <script>scripts\scr_getLecture.gml</script>
     <script>scripts\scr_getSlides.gml</script>
+    <script>scripts\scr_getLecFromFile.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -220,6 +243,7 @@
       <object>objects\obj_house1_label</object>
       <object>objects\obj_house2_label</object>
       <object>objects\obj_house3_label</object>
+      <object>objects\obj_ChallengeHud</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_player1</object>
@@ -249,6 +273,8 @@
       <object>objects\obj_close</object>
       <object>objects\obj_btn_Continue</object>
       <object>objects\obj_StartChallenge</object>
+      <object>objects\obj_back</object>
+      <object>objects\obj_Front</object>
     </objects>
     <objects name="Map">
       <object>objects\obj_level</object>
@@ -345,7 +371,6 @@
     <room>rooms\rm_Admiral</room>
     <room>rooms\rm_KevinLecture</room>
     <room>rooms\rm_HoA</room>
-    <room>rooms\rm_Home</room>
     <room>rooms\rm_Map</room>
     <room>rooms\rm_Exit</room>
     <rooms name="LevelIntro">
@@ -359,6 +384,7 @@
     </rooms>
     <rooms name="CoconutHunt">
       <room>rooms\rm_level2_game</room>
+      <room>rooms\rm_level2_result</room>
     </rooms>
     <rooms name="ShipGame">
       <room>rooms\rm_level3_game</room>

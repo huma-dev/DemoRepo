@@ -25,7 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (room == rm_Exit)
+            <string>if (room == rm_Island)
+{if (global.FirstRun)
+{  
+room_goto(rm_IslandIntro);
+
+  }
+}
+
+if (room == rm_Exit)
 {
 with(obj_player1)
 {

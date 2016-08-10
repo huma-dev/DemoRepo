@@ -10,11 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>if (global.FirstRun)
-{ 
- room_goto(rm_IslandIntro);
-
-  }</code>
+  <code></code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <makerSettings>
@@ -54,7 +50,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_house1" x="295" y="59" name="inst_1F0EA074" locked="0" code="" scaleX="0.600000023841858" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="obj_house1" x="281" y="68" name="inst_1F0EA074" locked="0" code="" scaleX="0.600000023841858" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_houseMap" x="416" y="169" name="inst_90DB0799" locked="0" code="" scaleX="0.522988021373749" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_house3" x="129" y="174" name="inst_49B9279A" locked="0" code="" scaleX="0.5625" scaleY="0.514423072338104" colour="4294967295" rotation="0"/>
     <instance objName="obj_Lighthouse" x="507" y="170" name="inst_55BE2153" locked="0" code="" scaleX="0.455056011676788" scaleY="0.442196995019913" colour="4294967295" rotation="0"/>

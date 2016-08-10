@@ -31,8 +31,8 @@
           <args/>
         </function>
         <function>
-          <name>createUser</name>
-          <externalName>createUser</externalName>
+          <name>setUserInfo</name>
+          <externalName>setUserInfo</externalName>
           <kind>11</kind>
           <help></help>
           <returnType>1</returnType>
@@ -41,15 +41,6 @@
             <arg>1</arg>
             <arg>1</arg>
           </args>
-        </function>
-        <function>
-          <name>setUserInfo</name>
-          <externalName>setUserInfo</externalName>
-          <kind>11</kind>
-          <help></help>
-          <returnType>1</returnType>
-          <argCount>0</argCount>
-          <args/>
         </function>
         <function>
           <name>getUserInfo</name>

@@ -93,7 +93,7 @@
     <option_html5_google_analytics_enable>0</option_html5_google_analytics_enable>
     <option_html5_google_tracking_id></option_html5_google_tracking_id>
     <option_html5_icon>Configs\Default\html5\fav.ico</option_html5_icon>
-    <option_html5_index>0</option_html5_index>
+    <option_html5_index>-1</option_html5_index>
     <option_html5_interpolate>-1</option_html5_interpolate>
     <option_html5_jsprepend></option_html5_jsprepend>
     <option_html5_loadingbar></option_html5_loadingbar>
@@ -205,12 +205,23 @@
     <option_sync_vertex>0</option_sync_vertex>
     <option_textureGroup0_border>2</option_textureGroup0_border>
     <option_textureGroup0_nocropping>0</option_textureGroup0_nocropping>
-    <option_textureGroup0_parent>&lt;none&gt;</option_textureGroup0_parent>
+    <option_textureGroup0_parent>coconutHunt</option_textureGroup0_parent>
     <option_textureGroup0_scaled>0</option_textureGroup0_scaled>
     <option_textureGroup0_targets>9223372036854775807</option_textureGroup0_targets>
+    <option_textureGroup1_border>2</option_textureGroup1_border>
     <option_textureGroup1_nocropping>0</option_textureGroup1_nocropping>
-    <option_textureGroup_count>1</option_textureGroup_count>
+    <option_textureGroup1_parent>&lt;none&gt;</option_textureGroup1_parent>
+    <option_textureGroup1_scaled>0</option_textureGroup1_scaled>
+    <option_textureGroup1_targets>9223372036854775807</option_textureGroup1_targets>
+    <option_textureGroup2_border>2</option_textureGroup2_border>
+    <option_textureGroup2_nocropping>0</option_textureGroup2_nocropping>
+    <option_textureGroup2_parent>&lt;none&gt;</option_textureGroup2_parent>
+    <option_textureGroup2_scaled>0</option_textureGroup2_scaled>
+    <option_textureGroup2_targets>9223372036854775807</option_textureGroup2_targets>
+    <option_textureGroup_count>3</option_textureGroup_count>
     <option_textureGroups0>Default</option_textureGroups0>
+    <option_textureGroups1>coconutHunt</option_textureGroups1>
+    <option_textureGroups2>CatchTheEggs</option_textureGroups2>
     <option_tizen_app_id>http://yourdomain/TrainingTime</option_tizen_app_id>
     <option_tizen_build_version>0</option_tizen_build_version>
     <option_tizen_display_name>TrainingTime</option_tizen_display_name>

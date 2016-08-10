@@ -62,7 +62,7 @@ draw_texture_flush();</code>
   </views>
   <instances>
     <instance objName="objParchment" x="4" y="-32" name="inst_A4AAFEB3" locked="0" code="" scaleX="1.1599999666214" scaleY="0.467836260795593" colour="4294967295" rotation="0"/>
-    <instance objName="objControl_coco" x="17" y="99" name="inst_44FCE0A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objControl_coco" x="31" y="105" name="inst_44FCE0A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_nextRoom" x="405" y="223" name="inst_67C8F2B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cocoRod" x="72" y="341" name="inst_1CDE1FBB" locked="0" code="" scaleX="1" scaleY="0" colour="4294967295" rotation="0"/>
     <instance objName="obj_cocoRod" x="140" y="456" name="inst_4D3FD8F0" locked="0" code="" scaleX="1" scaleY="0" colour="4294967295" rotation="0"/>
