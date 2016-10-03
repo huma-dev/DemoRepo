@@ -59,7 +59,7 @@ else
 
 url_open_ext( 'http://huma.veriy.com', '_blank'); 
 global.surveyCompleted = true;
-room_goto(rm_IslandInBetween);
+//room_goto(rm_IslandInBetween);
 </string>
           </argument>
         </arguments>

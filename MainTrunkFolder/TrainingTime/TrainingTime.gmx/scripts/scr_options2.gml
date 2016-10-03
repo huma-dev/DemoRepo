@@ -1,7 +1,7 @@
-option[0] = "start date
-End date
-Identify activities
-Deadlines
+option[0] = "start date;
+End date;
+Identify activities;
+Deadlines;
 3;"
 option[1] = "Costs
 ;No. of users

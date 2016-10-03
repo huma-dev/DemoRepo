@@ -25,7 +25,18 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.CatchTheEggsCompleted = true;
+            <string>
+
+if (room == rm_level1_result)
+{
+global.CatchTheEggsCompleted = true;
+}
+
+else if (room == rm_level2_result)
+{
+global.CoconutHuntCompleted = true;
+}
+
 room_goto(rm_Map);
 </string>
           </argument>

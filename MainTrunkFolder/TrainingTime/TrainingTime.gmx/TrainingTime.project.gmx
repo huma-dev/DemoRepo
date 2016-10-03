@@ -28,7 +28,9 @@
     <extension index="2">extensions\setUserScore</extension>
     <extension index="3">extensions\getUserScore</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_bg</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="DummySprites">
       <sprite>sprites\sprite1</sprite>
@@ -70,8 +72,11 @@
       <sprite>sprites\spr_btn_go</sprite>
       <sprite>sprites\spr_close</sprite>
       <sprite>sprites\spr_Continue</sprite>
+      <sprite>sprites\spr_Replay</sprite>
+      <sprite>sprites\sprLogin</sprite>
       <sprite>sprites\spr_Back</sprite>
       <sprite>sprites\spr_Front</sprite>
+      <sprite>sprites\sprGameOver</sprite>
     </sprites>
     <sprites name="Extras">
       <sprite>sprites\spr_cap</sprite>
@@ -218,6 +223,7 @@
   <fonts name="fonts">
     <font>fonts\font1</font>
     <font>fonts\font2</font>
+    <font>fonts\font3</font>
   </fonts>
   <objects name="objects">
     <objects name="CocnutHunt">
@@ -278,9 +284,11 @@
       <object>objects\obj_btn_go</object>
       <object>objects\obj_close</object>
       <object>objects\obj_btn_Continue</object>
+      <object>objects\obj_btn_Replay</object>
       <object>objects\obj_StartChallenge</object>
       <object>objects\obj_back</object>
       <object>objects\obj_Front</object>
+      <object>objects\objGameUp</object>
     </objects>
     <objects name="Map">
       <object>objects\obj_level</object>
@@ -382,6 +390,7 @@
     <room>rooms\rm_HoA</room>
     <room>rooms\rm_Map</room>
     <room>rooms\rm_Exit</room>
+    <room>rooms\rm_GameUp_Replay</room>
     <rooms name="LevelIntro">
       <room>rooms\rm_level1</room>
       <room>rooms\rm_level2</room>

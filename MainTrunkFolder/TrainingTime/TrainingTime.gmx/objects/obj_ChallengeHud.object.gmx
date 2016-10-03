@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>show_message("Button clicked");
+            <string>//show_message("Button clicked");
 room_goto(rm_Island);
 </string>
           </argument>

@@ -25,30 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//room_goto(rm_IntroScreen);
-
-if (global.CatchTheEggsCompleted )
-{ 
-    if (global.CoconutHuntCompleted)
-    {
-        if (global.surveyCompleted)
-        {
-          room_goto(rm_Exit);    
-        }
-        else
-        {
-         room_goto(rm_IslandInBetween);
-        }
-    }
-    else
-    {
-    room_goto(rm_IslandInBetween);
-    }
-}
-else
-{
-room_goto(rm_IslandInBetween);
-}
+            <string>room_goto(rm_IslandInBetween);
 
 </string>
           </argument>

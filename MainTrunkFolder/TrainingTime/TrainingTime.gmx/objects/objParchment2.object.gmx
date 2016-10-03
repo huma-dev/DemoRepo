@@ -97,7 +97,7 @@ if (objControl_AdmiralRoom.stopConv)
 {
 //show_message(""+obj_KevinLec2.conversationCount );
 global.lecture2finished = true;
-url_open_ext( 'http://yoyogames.com', '_blank');
+url_open_ext( 'https://www.youtube.com/watch?v=0YBMfTorE6A', '_blank');
 global.currentLevel = 2;
 room_goto(rm_level2);
 }

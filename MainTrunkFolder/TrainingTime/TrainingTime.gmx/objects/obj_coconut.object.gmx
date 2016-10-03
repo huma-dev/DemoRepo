@@ -3,7 +3,7 @@
   <spriteName>spr_coconut</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-2</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -56,7 +56,10 @@ option ="";
             <string>if (!collided)
 then 
 {
-y = y + 2 ;
+if (y&lt; 400)
+{
+y = y + 2 ;}
+
 }
 </string>
           </argument>
@@ -238,53 +241,9 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///End Game or Restart Room Logic
-
-
-image_speed = 0;
-sprite_index = 11;
-
-global.CoconutHuntCounter++;
-if (global.CoconutHuntCounter &lt;= 9 )
-{
-global.BasketPrevY = objBasket.y;
-global.BasketPrevX = objBasket.x;
-room_restart();
-}
-else
-{
-global.CoconutHuntCompleted = true;
-room_goto(rm_level2_result);
-
-}
-instance_destroy();
-
-
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///End Game or Restart Room Logic
-
+            <string>///Do Nothing
+///End Game or Restart Room Logic
+/*
 
 image_speed = 0;
 sprite_index = 11;
@@ -305,7 +264,7 @@ room_goto(rm_level2_result);
 instance_destroy();
 
 
-
+*/
 </string>
           </argument>
         </arguments>
