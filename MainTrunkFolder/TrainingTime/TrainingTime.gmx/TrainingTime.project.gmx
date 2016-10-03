@@ -26,6 +26,7 @@
     <extension index="0">extensions\Firebase</extension>
     <extension index="1">extensions\createUser</extension>
     <extension index="2">extensions\setUserScore</extension>
+    <extension index="3">extensions\getUserScore</extension>
   </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -120,7 +121,7 @@
       <sprite>sprites\spr_rod</sprite>
       <sprite>sprites\sprBasket</sprite>
       <sprite>sprites\sprParchment</sprite>
-      <sprite>sprites\sprScore</sprite>
+      <sprite>sprites\sprEggScore</sprite>
     </sprites>
     <sprites name="AdmiralNate">
       <sprite>sprites\sprAdmiralNate</sprite>
@@ -135,6 +136,7 @@
       <sprite>sprites\spr_ripeCoconut</sprite>
       <sprite>sprites\spr_coconutCrack</sprite>
       <sprite>sprites\spr_cocoRod</sprite>
+      <sprite>sprites\sprCocoScore</sprite>
     </sprites>
     <sprites name="AdmiralKevin">
       <sprite>sprites\spr_AdmiralKevin</sprite>
@@ -169,7 +171,7 @@
       <sprite>sprites\spr_vid2</sprite>
       <sprite>sprites\spr_TreasureChest</sprite>
       <sprite>sprites\spr_BoxOfWonders</sprite>
-      <sprite>sprites\spr_HOA</sprite>
+      <sprite>sprites\spr_score</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -200,7 +202,9 @@
       <script>scripts\scr_Boolean.gml</script>
       <script>scripts\scr_explodeString.gml</script>
       <script>scripts\scr_options.gml</script>
+      <script>scripts\scr_options2.gml</script>
       <script>scripts\scr_question.gml</script>
+      <script>scripts\scr_question2.gml</script>
       <script>scripts\scr_wrapText.gml</script>
     </scripts>
     <scripts name="IslandIntro">
@@ -209,9 +213,9 @@
     <script>scripts\scr_getLecture.gml</script>
     <script>scripts\scr_getSlides.gml</script>
     <script>scripts\scr_getLecFromFile.gml</script>
+    <script>scripts\scr_ClearData.gml</script>
   </scripts>
   <fonts name="fonts">
-    <font>fonts\font0</font>
     <font>fonts\font1</font>
     <font>fonts\font2</font>
   </fonts>
@@ -221,6 +225,7 @@
       <object>objects\obj_coconut</object>
       <object>objects\obj_cocoRod</object>
       <object>objects\objControl_coco</object>
+      <object>objects\objCocoScore</object>
     </objects>
     <objects name="DummyObjects">
       <object>objects\object0</object>
@@ -244,6 +249,7 @@
       <object>objects\obj_house2_label</object>
       <object>objects\obj_house3_label</object>
       <object>objects\obj_ChallengeHud</object>
+      <object>objects\obj_Lighthouse_label</object>
     </objects>
     <objects name="Player">
       <object>objects\obj_player1</object>
@@ -355,6 +361,9 @@
       <object>objects\obj_BoxOfWonders</object>
       <object>objects\obj_TreasureChest</object>
       <object>objects\obj_HOA</object>
+    </objects>
+    <objects name="CheckProgress">
+      <object>objects\objScores</object>
     </objects>
   </objects>
   <timelines name="timelines">

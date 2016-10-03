@@ -130,7 +130,86 @@ room_restart();
 else
 {
 global.CoconutHuntCompleted = true;
-room_goto(rm_level1_result);
+room_goto(rm_level2_result);
+
+}
+instance_destroy();
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="7">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>
+collided = true;
+image_speed = 0.3;
+image_index = 11;
+
+
+if (isCorrectAns)
+{
+x = objBasket.x + 15;
+y  = objBasket.y +10 ;
+sprite_index = spr_ripeCoconut;
+global.CoconutHuntScore+=1;
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///End Game or Restart Room Logic
+
+
+image_speed = 0;
+sprite_index = 11;
+
+global.CoconutHuntCounter++;
+if (global.CoconutHuntCounter &lt;= 9 )
+{
+global.BasketPrevY = objBasket.y;
+global.BasketPrevX = objBasket.x;
+room_restart();
+}
+else
+{
+global.CoconutHuntCompleted = true;
+room_goto(rm_level2_result);
 
 }
 instance_destroy();
@@ -175,7 +254,7 @@ room_restart();
 else
 {
 global.CoconutHuntCompleted = true;
-room_goto(rm_level1_result);
+room_goto(rm_level2_result);
 
 }
 instance_destroy();
@@ -220,7 +299,7 @@ room_restart();
 else
 {
 global.CoconutHuntCompleted = true;
-room_goto(rm_level1_result);
+room_goto(rm_level2_result);
 
 }
 instance_destroy();

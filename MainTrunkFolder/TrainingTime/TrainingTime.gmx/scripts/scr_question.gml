@@ -1,13 +1,13 @@
-arr[0] = "Which of the following is not considered as a risk in project management?"
-arr[1] = "Which of the following is/are considered stakeholder in the software process?"
-arr[2] = " What are the signs that a software project is in trouble?"
-arr[3] = "Checking quality of software in both simulated and live environments is known as"
-arr[4] = "DFD stands for "
-arr[5] = "The final form of testing COTS software is _________ testing."
-arr[6] = "In the maintenance phase the product must be tested against previous test cases. This is known as ____ testing."
-arr[7] = "The individual or organisation who wants a product to be developed is known as the"
-arr[8] = "Degree to which design specifications are followed in manufacturing the product is called"
-arr[9] = "Which of the following is not included in External failure costs"
+arr[0] = "1.The end result of a Project is :?"
+arr[1] = "2.Project Management aims  ________ of projects"
+arr[2] = "3.Feasability study checks the ____ of Project"
+arr[3] = "4.Planning a Project is NOT possible without:"
+arr[4] = "5.Project Execution highlights"
+arr[5] = "6.	Stake Holders should be:"
+arr[6] = "7.	Project Manager is NOT Responsible for"
+arr[7] = "8.	Project Manager serves as "
+arr[8] = "9.	Project objective is:"
+arr[9] = "10.	Time constraint is:"
 
 
 ques = arr[argument0];

@@ -51,7 +51,7 @@
   </views>
   <instances>
     <instance objName="objResult" x="0" y="96" name="inst_36A86FB3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_btn_Continue" x="416" y="288" name="inst_A0BB8691" locked="0" code="" scaleX="0.485714286565781" scaleY="0.612903237342834" colour="4294967295" rotation="0"/>
+    <instance objName="obj_btn_Continue" x="416" y="352" name="inst_A0BB8691" locked="0" code="" scaleX="0.485713988542557" scaleY="0.612902998924255" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

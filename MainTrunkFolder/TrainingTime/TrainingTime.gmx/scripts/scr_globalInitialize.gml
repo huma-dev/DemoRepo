@@ -1,3 +1,4 @@
+global.surveyCompleted = false;
 // Catch the Eggs
  
 global.CacthTheEggCounter = 0;

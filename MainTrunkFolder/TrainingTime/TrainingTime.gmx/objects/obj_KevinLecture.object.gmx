@@ -52,7 +52,7 @@ stopConv = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Nate's code  
+            <string>///Kevin's code  
 if (!objControl_AdmiralRoom.stopConv)
 {
 draw_set_color(c_black);

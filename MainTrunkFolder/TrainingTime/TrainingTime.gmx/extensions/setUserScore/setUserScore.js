@@ -2,9 +2,9 @@
 function setUserScore(user, level, score)
 {
 	
-	var myFirebaseRef = new Firebase("https://gmdemoapp.firebaseio.com/user");
-	
-var hopperRef = myFirebaseRef.child(user);
+	var myFirebaseRef = new Firebase("https://gmdemoapp.firebaseio.com/Comsats/user");
+	var ScoreListRef = new Firebase('https://gmdemoapp.firebaseio.com/Comsats/score');	
+	var hopperRef = myFirebaseRef.child(user);
 	
   if (level == "1" )
   {
@@ -13,7 +13,7 @@ hopperRef.update
 	
 	 "level1": score
   });
-  
+  ScoreListRef.push({ 'user_id': user, 'level1': score });
   }
 
   if (level == "2" )
@@ -23,11 +23,11 @@ hopperRef.update
 	
 	 "level2": score
   });
+  ScoreListRef.push({ 'user_id': user, 'level2': score });
   }
-  
-
-
+     
 }
+
 /*
 function setUserInfo(){
 	var myFirebaseRef = new Firebase("https://gmdemoapp.firebaseio.com");

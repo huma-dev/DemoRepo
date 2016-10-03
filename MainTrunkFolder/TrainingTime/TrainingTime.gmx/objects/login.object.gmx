@@ -30,7 +30,7 @@
     u = get_string("Login Name", "Anonymous"); 
  p = get_string("Login Name:"+u+"# Password:", "Anonymous"); 
  
- createUser(u,p);
+createUser(u,p);
 global.currentUser = u;  
  }
 

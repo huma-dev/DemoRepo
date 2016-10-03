@@ -170,6 +170,8 @@ draw_text_ext(x,y, cstr,23, 250);
 }
 else {
 objControl_AdmiralRoom.stopConv = true;
+draw_text_ext(x,y, "Click to watch video and earn points",23, 250);
+//show_message("open Video");
 }
 }
 </string>
@@ -189,5 +191,8 @@ objControl_AdmiralRoom.stopConv = true;
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>0,0</point>
+    <point>124,124</point>
+  </PhysicsShapePoints>
 </object>

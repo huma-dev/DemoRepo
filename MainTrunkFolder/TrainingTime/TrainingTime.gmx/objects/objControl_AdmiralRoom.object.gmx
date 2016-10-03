@@ -27,13 +27,6 @@
             <kind>1</kind>
             <string>nextStatement = false;
 stopConv = false;
-
-
-if (global.lecture1 == "null")
-{
-global.lectureText = "Loading Content";
-
-}
 </string>
           </argument>
         </arguments>

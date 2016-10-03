@@ -73,7 +73,7 @@
             <kind>1</kind>
             <string>image_alpha = 0.3;
 //draw_texture_flush();
-show_message(global.currentLevel);
+//show_message(global.currentLevel);
 switch (global.currentLevel)
 {
 case 1:
@@ -90,7 +90,8 @@ break;
 
 case 3:
 {
-room_goto(rm_level3_game);
+//room_goto(rm_level3_game);
+url_open_ext( 'http://huma.veriy.com', '_blank'); 
 break;
 }
 }

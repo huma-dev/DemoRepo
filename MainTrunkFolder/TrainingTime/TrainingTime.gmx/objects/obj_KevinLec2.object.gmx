@@ -137,20 +137,46 @@ if ds_map_find_value(async_load, "id") == get[0]
           <argument>
             <kind>1</kind>
             <string>  ///Nate's code  
+draw_set_color(c_black);
 if (!objControl_AdmiralRoom.stopConv)
 {
-draw_set_color(c_black);
+
 
 //FleetOverView
 //a[0]= rmFleetOverView_Instructor_statement1;
-a[0] = rmFleetOverView_Instructor_statement1;
-a[1] = rmFleetOverView_Instructor_statement2 ;
-a[2] = rmFleetOverView_Instructor_statement3;
-a[3] = "Tap to Watch Video"
-
+a[0] = "Planning, Estimating, Scheduling#";
+a[1]= "What’s the difference?#Planning, Estimating, Scheduling#";
+a[2] = "Plan: Identify activities. No specific start and end dates.
+#"
+a[3]= "Estimating: Determining the size &amp; duration of activities.
+#" ;
+a[4] = "Schedule: Adds specific start and end dates, relationships, and resources.
+#";
+a[5]= "Estimation#“Predictions are hard, especially about the future”, Yogi Berra
+";
+a[6]= "2 Types: Lucky or Lousy(Useless)?
+#";
+a[7]= "How To Schedule#1. Identify “what” needs to be done
+#Work Breakdown Structure (WBS)";
+a[8]= "2. Identify “how much” (the size)#
+Size estimation techniques#3. Identify the dependency between tasks
+#Dependency graph, network diagram
+#";
+a[9]= "4. Estimate total duration of the work to be done
+The actual schedule
+#";
+a[10] = "#Partitioning Your Project";
+a[11]= "1.You need to decompose your project into manageable chunks
+#";
+a[12]= "Divide &amp; Conquer#";
+a[13]= "Two main causes of project failure#
+#1. Forgetting something critical
+#2. Rough estimates become targets
+#";
+a[14] = "Click to wacth video";
 var cstr;
 var numOfSlides = array_length_1d(global.lectureText);
-if (conversationCount &lt;= numOfSlides)
+if (conversationCount &lt;= 14)
 {
 numOfChar2 = 0;
 
@@ -161,24 +187,26 @@ objControl_AdmiralRoom.nextStatement = false;
 conversationCount += 1;
 }
 i = conversationCount;
-msg = string(global.lectureText[i]);
+//msg = string(global.lectureText[i]);
+msg = string(a[i]);
 cstr=string_copy(msg,1,pos2);
 pos2+=0.5;
 draw_text_ext(x,y, cstr,23, 250);
 
  totalChar = string_length(msg);
  numOfChar2 = string_length(cstr);
-        if(numOfChar2 = totalChar)
+        if(numOfChar2 == totalChar)
         {
-        objNate.image_speed  = 0;
+        obj_AdmiralKevin.image_speed  = 0;
         }
         else
         { 
-         objNate.image_speed = 0.2;    
+         obj_AdmiralKevin.image_speed = 0.2;    
         }
 }
 else {
 objControl_AdmiralRoom.stopConv = true;
+draw_text_ext(x,y, "Click to watch video and earn points",23, 250);
 //show_message("open Video");
 }
 }

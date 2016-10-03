@@ -36,6 +36,7 @@ else if (room == rm_level2_result)
 {
 
 score2 = global.CoconutHuntScore;
+
 setUserScore(global.currentUser, "2", score2);
 } 
 </string>
@@ -65,8 +66,20 @@ setUserScore(global.currentUser, "2", score2);
 draw_set_font(font0);
 draw_set_color(c_white);
 varY = sprite_height/ 2 ;
-draw_text_ext(sprite_width/2 , y+100 , global.CatchTheEggScore + "/10", 12, 25);
+
+
+
 //draw_text_ext(x, y , "7/10", 12, 25);
+
+if (room == rm_level1_result)
+{
+draw_text_ext(sprite_width/2 , y+100 , global.CatchTheEggScore + "/10", 12, 25);
+}
+
+else if (room == rm_level2_result)
+{
+draw_text_ext(sprite_width/2 , y+100 , global.CoconutHuntScore + "/10", 12, 25);
+} 
 </string>
           </argument>
         </arguments>

@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>if (room== rm_level2_game)
-{question = scr_question(global.CoconutHuntCounter);}
+{question = scr_question2(global.CoconutHuntCounter);}
 else
 {
 question = scr_question(global.CacthTheEggCounter);

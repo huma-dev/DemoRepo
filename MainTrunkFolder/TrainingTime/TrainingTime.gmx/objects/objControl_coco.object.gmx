@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>// get Answers
-
-ansString = scr_options(global.CoconutHuntCounter);
+show_message(global.CoconutHuntCounter);
+ansString = scr_options2(global.CoconutHuntCounter);
 
 optionsArray = scr_explodeString(ansString);
 
@@ -61,6 +61,7 @@ for (i = 0 ; i &lt;=3 ; i++ )
        if (objControl_coco.i+1 == objControl_coco.correctAns)
        then {
        isCorrectAns = true;
+        draw_set_color(c_olive);
        }
        else
        {

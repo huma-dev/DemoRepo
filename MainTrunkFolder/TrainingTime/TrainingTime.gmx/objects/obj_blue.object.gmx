@@ -55,8 +55,11 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.currentLevel =1;
-room_goto(rm_level1);
+            <string>global.currentLevel =3;
+
+url_open_ext( 'http://huma.veriy.com', '_blank'); 
+global.surveyCompleted = true;
+room_goto(rm_IslandInBetween);
 </string>
           </argument>
         </arguments>

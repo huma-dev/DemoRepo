@@ -15,7 +15,10 @@
 for (image_alpha = 0.5; image_alpha = 1; image_alpha +=0.02)
 {
 //do nothing
-}*/</code>
+}*/
+
+//room_goto_next();
+global.FirstRun = false;</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <makerSettings>
@@ -86,7 +89,7 @@ for (image_alpha = 0.5; image_alpha = 1; image_alpha +=0.02)
     <instance objName="obj_tree3" x="261" y="88" name="inst_E54E575C" locked="0" code="" scaleX="0.558823525905609" scaleY="0.560747683048248" colour="4294967295" rotation="0"/>
     <instance objName="obj_player1" x="259" y="217" name="inst_D3F71160" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="&lt;undefined&gt;" x="29" y="11" name="inst_32839751" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_ChallengeHud" x="58" y="66" name="inst_B7398060" locked="0" code="" scaleX="0.921951234340668" scaleY="0.829842925071716" colour="4294967295" rotation="0"/>
+    <instance objName="obj_ChallengeHud" x="327" y="230" name="inst_B7398060" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

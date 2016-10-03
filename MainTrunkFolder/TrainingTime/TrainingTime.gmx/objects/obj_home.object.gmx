@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="6" enumb="0">
+    <event eventtype="6" enumb="7">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -26,7 +26,30 @@
           <argument>
             <kind>1</kind>
             <string>//room_goto(rm_IntroScreen);
+
+if (global.CatchTheEggsCompleted )
+{ 
+    if (global.CoconutHuntCompleted)
+    {
+        if (global.surveyCompleted)
+        {
+          room_goto(rm_Exit);    
+        }
+        else
+        {
+         room_goto(rm_IslandInBetween);
+        }
+    }
+    else
+    {
+    room_goto(rm_IslandInBetween);
+    }
+}
+else
+{
 room_goto(rm_IslandInBetween);
+}
+
 </string>
           </argument>
         </arguments>
