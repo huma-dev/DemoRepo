@@ -1,62 +1,13 @@
-option[0] = "Product
-;	Customer Relationship
-;	Estimation analysis
-;	Validation
-;	1;"
-option[1] = "	Estimation
-;	Successful completion
-;	Management
-;	None of the above
-;	2
-;"
-option[2] = "	Scenario
-;	Business case
-;	Costs
-;	Time
-;	3
-;"
-option[3] = "	Fesabilty study
-;	Developer’s knowledge
-;	Development resources
-;	None of the above.
-;	1
-;"
-option[4] = "	Project Requirements
-;	Project activities
-;	Developer Skills
-;	Team Politics
-;	2
-;"
-option[5] = "	Never bothered
-;	Made happy
-;	Identified asap
-;	None of the Above
-;	3
-;"
-option[6] = "	Work
-;	Time
-;	Cost
-;	Skills
-;4
-;"
-option[7] = "	Team Captain
-;	 Referee
-;	None of the above
-;	Skilled Person
-;	1
-;"
-option[8] = "	Within control
-;	Out of scope
-;	Target at hand
-;	All of the above
-;1
-;"
-option[9] = "Deadlines
-;	Requirement gathering
-;	Scope definition
-;	All of the above
-;	1
-;"
+option[0] = "Android; UNIX ;LINUX ; iOS;2;"
+option[1] = "Extension;Modification;Decrement;All of the above;1;"
+option[2] = "Object oriented;Not object oriented;Task oriented;None of the above;2;"
+option[3] = "Black; Blue;Red;Pink;2;"
+option[4] = "Keywords; Country names; Your pet names; None of the above;1;"
+option[5] = "Case; Break; While; All of the above;4;"
+option[6] = "Car; Care; Char; Chare;3;"
+option[7] = "Identifier; Variable; Algorithm;Technique;1;"
+option[8] = "First_name;secondName;thirdName;All of the above;4;"
+option[9] = "theName;Your5marks;5yourmarks; None of the above;3;"
 
 ans = option[argument0];
 

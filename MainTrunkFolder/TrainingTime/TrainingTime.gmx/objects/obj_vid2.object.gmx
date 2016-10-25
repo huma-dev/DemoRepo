@@ -57,7 +57,7 @@ image_alpha = 0.5;
             <kind>1</kind>
             <string>///show video2
 
-url_open_ext( 'https://www.youtube.com/watch?v=0YBMfTorE6A', '_blank'); 
+url_open_ext( 'https://www.youtube.com/watch?v=5ex4HgCEkzk', '_blank'); 
 </string>
           </argument>
         </arguments>

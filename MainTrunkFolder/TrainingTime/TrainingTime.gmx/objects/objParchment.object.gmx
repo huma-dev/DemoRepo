@@ -32,7 +32,7 @@ else
 question = scr_question(global.CacthTheEggCounter);
 }
 //show_message(question);
-
+show_message("line 8 obj parchmnt#"+ string(question));
 </string>
           </argument>
         </arguments>

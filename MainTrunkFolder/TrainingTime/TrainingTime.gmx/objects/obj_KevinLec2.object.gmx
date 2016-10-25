@@ -144,35 +144,36 @@ if (!objControl_AdmiralRoom.stopConv)
 
 //FleetOverView
 //a[0]= rmFleetOverView_Instructor_statement1;
-a[0] = "Planning, Estimating, Scheduling#";
-a[1]= "What’s the difference?#Planning, Estimating, Scheduling#";
-a[2] = "Plan: Identify activities. No specific start and end dates.
+a[0] = "C++ identifiers#";
+a[1]= "Identifiers appear in black in Visual C++.
+#";
+a[2] = "An identifier is a name for a variable, constant, function, etc. 
+
 #"
-a[3]= "Estimating: Determining the size &amp; duration of activities.
+a[3]= "It consists of a letter followed by any sequence of letters, digits, and underscores. 
 #" ;
-a[4] = "Schedule: Adds specific start and end dates, relationships, and resources.
+a[4] = "Examples of valid identifiers: First_name, age,  y2000,  y2k
 #";
-a[5]= "Estimation#“Predictions are hard, especially about the future”, Yogi Berra
+a[5]= "Examples of invalid identifiers: 2000y
 ";
-a[6]= "2 Types: Lucky or Lousy(Useless)?
+a[6]= "Identifiers cannot have special characters in them.# For example:  X=Y, J-20, ~Ricky,*Michael#  are invalid identifiers. 
+
 #";
-a[7]= "How To Schedule#1. Identify “what” needs to be done
-#Work Breakdown Structure (WBS)";
-a[8]= "2. Identify “how much” (the size)#
-Size estimation techniques#3. Identify the dependency between tasks
-#Dependency graph, network diagram
+a[7]= "Identifiers are case-sensitive.#  For example: # Hello, hello, #WHOAMI, WhoAmI, whoami #are unique identifiers. 
+";
+a[8]= "C++ comments#Comments appear in green in Visual C++.
 #";
-a[9]= "4. Estimate total duration of the work to be done
-The actual schedule
+a[9]= "Comments are explanatory notes; they are ignored by the compiler.
 #";
-a[10] = "#Partitioning Your Project";
-a[11]= "1.You need to decompose your project into manageable chunks
+a[10] = "#There are two ways to include comments in a program: #
+// A double slash marks the start of a //single line comment.  
+";
+a[11]= "#/* A slash followed by an asterisk marks the start of a multiple line comment. It ends with an asterisk followed by a slash. */
 #";
-a[12]= "Divide &amp; Conquer#";
-a[13]= "Two main causes of project failure#
-#1. Forgetting something critical
-#2. Rough estimates become targets
-#";
+a[12]= "What makes a bad program?##Writing Code without detailed analysis and design
+";
+a[13]= "Repeating trial and error without understanding the problem#
+#Writing tricky and dirty programs#";
 a[14] = "Click to wacth video";
 var cstr;
 var numOfSlides = array_length_1d(global.lectureText);

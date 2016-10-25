@@ -253,6 +253,7 @@ sprite_index = 11;
 global.CacthTheEggCounter++;
 if (global.CacthTheEggCounter &lt;= 9 )
 {
+show_message("room restart logic here");
 global.BasketPrevY = objBasket.y;
 global.BasketPrevX = objBasket.x;
 room_restart();

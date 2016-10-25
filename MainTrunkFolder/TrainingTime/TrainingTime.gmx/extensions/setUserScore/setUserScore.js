@@ -2,8 +2,8 @@
 function setUserScore(user, level, score)
 {
 	
-	var myFirebaseRef = new Firebase("https://gmdemoapp.firebaseio.com/Comsats/user");
-	var ScoreListRef = new Firebase('https://gmdemoapp.firebaseio.com/Comsats/score');	
+	var myFirebaseRef = new Firebase("https://gmdemoapp.firebaseio.com/FASTi/user");
+	var ScoreListRef = new Firebase('https://gmdemoapp.firebaseio.com/FASTi/score');	
 	var hopperRef = myFirebaseRef.child(user);
 	
   if (level == "1" )

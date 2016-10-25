@@ -1,17 +1,18 @@
-arr[0] = "1.The end result of a Project is :?"
-arr[1] = "2.Project Management aims  ________ of projects"
-arr[2] = "3.Feasability study checks the ____ of Project"
-arr[3] = "4.Planning a Project is NOT possible without:"
-arr[4] = "5.Project Execution highlights"
-arr[5] = "6.	Stake Holders should be:"
-arr[6] = "7.	Project Manager is NOT Responsible for"
-arr[7] = "8.	Project Manager serves as "
-arr[8] = "9.	Project objective is:"
-arr[9] = "10.	Time constraint is:"
+arr[0] = "1.C is a programming language developed alongside _________ operating system."
+arr[1] = "2.C++ is an ____ of C"
+arr[2] = "3.C is"
+arr[3] = "4.Keywords appear in ___ in Visual C++"
+arr[4] = "5.___ can’t be used as variable and constant names:"
+arr[5] = "6.____ is a keyword"
+arr[6] = "7.___ is a keyword"
+arr[7] = "8.An ____ is a name for a variable, constant, function"
+arr[8] = "9.____ is a valid identifier:"
+arr[9] = "10.___ is invalid identifier:"
 
 
 ques = arr[argument0];
 
 
 return ques
+
 

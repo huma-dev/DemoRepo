@@ -110,7 +110,7 @@ objControl_AdmiralRoom.stopConv = true;
 if (objControl_AdmiralRoom.stopConv)
 {
 global.lecture1finished = true;
-url_open_ext( 'https://www.youtube.com/watch?v=snhJtiJnndo', '_blank');
+url_open_ext( 'https://www.youtube.com/watch?v=uzhFHNRsbII', '_blank'); 
 global.currentLevel = 1;
 room_goto(rm_level3);
 //instance_create(

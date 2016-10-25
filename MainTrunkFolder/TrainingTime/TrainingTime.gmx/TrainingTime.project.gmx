@@ -391,14 +391,14 @@
     <room>rooms\rm_Map</room>
     <room>rooms\rm_Exit</room>
     <room>rooms\rm_GameUp_Replay</room>
+    <rooms name="CatchTheEggs">
+      <room>rooms\rm_level1_game</room>
+      <room>rooms\rm_level1_result</room>
+    </rooms>
     <rooms name="LevelIntro">
       <room>rooms\rm_level1</room>
       <room>rooms\rm_level2</room>
       <room>rooms\rm_level3</room>
-    </rooms>
-    <rooms name="CatchTheEggs">
-      <room>rooms\rm_level1_game</room>
-      <room>rooms\rm_level1_result</room>
     </rooms>
     <rooms name="CoconutHunt">
       <room>rooms\rm_level2_game</room>

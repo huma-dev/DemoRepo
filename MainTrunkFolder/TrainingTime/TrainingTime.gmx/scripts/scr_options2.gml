@@ -1,61 +1,13 @@
-option[0] = "start date;
-End date;
-Identify activities;
-Deadlines;
-3;"
-option[1] = "Costs
-;No. of users
-;Team management
-;Duration of activities
-;4;"
-option[2] = "Graphs
-;Analysis
-;WBS
-;None of the above
-;3
-;"
-option[3] = "WBS
-;Analysis
-;Graphs
-;None
-;3
-;"
-option[4] = "Relationships
-;Costs
-;Timings
-;All.
-;4
-;"
-option[5] = "Hard 
-;Easy
-;Accurate
-;None
-;1
-;"
-option[6] = "Project failure
-;Stress
-;Budget
-;All of the above
-;1
-;"
-option[7] = "Partitioning
-;Presentations
-;Studies
-;None
-;1
-;"
-option[8] = "Detox
-;Assemble
-;Decompose
-;Write
-;3
-;"
-option[9] = "Unnecessary
-;Critical
-;Tough
-;None
-;2
-;"
+option[0] = "Not case-sensitive;case sensitive; some are case sensitive;None;2;"
+option[1] = "Blue;Black;Green;Pink;3;"
+option[2] = "Executed;Ignored;Validated;None of the above;2;"
+option[3] = "Double back slash;Slash followed by asterisk;Both a and b;None;3;"
+option[4] = "Ignored;Appreciated;Execute; validated;1;"
+option[5] = "True;False;I don’t know;None of the above;1;"
+option[6] = "Neat code;Proper algorithm;Bad programming;None of the above;3;"
+option[7] = "True;False;I don’t know;None of the above;1;"
+option[8] = "True;False;I don’t know;None of the above;1;"
+option[9] = "Proper understanding; Proper handwriting;Special pen;None of the above;1;"
 
 
 
@@ -63,4 +15,5 @@ ans = option[argument0];
 
 
 return ans
+
 

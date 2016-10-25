@@ -99,7 +99,7 @@ image_alpha += 0.02;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text_ext( x+ 20, y , "Project Management Estimation",15,100);
+            <string>draw_text_ext( x+ 20, y , "Intro to C++ II",15,100);
 </string>
           </argument>
         </arguments>

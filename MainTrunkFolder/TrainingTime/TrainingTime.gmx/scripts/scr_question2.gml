@@ -1,17 +1,20 @@
-arr[0] = "	Planning includes"
-arr[1] = "	Estimation determines:"
-arr[2] = "what” needs to be done is identified in:"
-arr[3] = "Task dependencies are shown in:"
-arr[4] = "	Scheduling includes:"
-arr[5] = "	Predictions are :"
-arr[6] = "	Partitioning helps reduce:"
-arr[7] = "	All projects should go through:"
-arr[8] = "	Partitioning is _____ your project into manageable chunks"
-arr[9] = "	Project fails when we forget something"
+///CocnutHunt 
+
+arr[0] = "11.	Identifiers are"
+arr[1] = "12.	Comments appear in ___ in Visual C++."
+arr[2] = "13.	Comments are ____ by the compiler"
+arr[3] = "14.	Comments in the program are included by:"
+arr[4] = "15.	Blank lines are ___ by the compiler just like comments. "
+arr[5] = "16.	There can be more than one statement on a single line."
+arr[6] = "17.	“Writing tricky and dirty programs” is a characteristic of writing a "
+arr[7] = "18.	789_char is an invalid identifier"
+arr[8] = "19.	Char_789 is a valid identifier"
+arr[9] = "20.	Code should be written with:"
 
 
 ques = arr[argument0];
 
 
 return ques
+
 

@@ -108,39 +108,33 @@ if (!objControl_AdmiralRoom.stopConv)
 
 //FleetOverView
 //a[0]= rmFleetOverView_Instructor_statement1;
-a[0] = "What is a Project ?# 
-Project Management Institute* definition:#"
-a[1]= "It is a temporary endeavour (having specific start and completion dates) undertaken to create a unique product or service.
+a[0] = "C is a programming language developed in the 1970's alongside the UNIX operating system. #"
+a[1]= "C provides a comprehensive set of features for handling a wide variety of applications
 ";
-a[2] = "What is Project Management ?#"
-a[3]= "It is the discipline of planning, organizing, and managing resources to bring about the successful completion of specific project goals and objectives.
+a[2] = " such as systems development and scientific computation. #"
+a[3]= "C++ is an “extension” of the C language, in that most C programs are also C++ programs.
 " ;
-a[4] = "Project management Comprises of mainly 3 things:
+a[4] = "C++, as opposed to C, supports “object-oriented programming.”
 ";
-a[5] = "Feasibility study – Assess whether a project is worth of starting – has it a valid business case#"
-a[6] ="#Planning – Happens if feasibility study indicates that the prospective project appears viable #"
-a[7] = "#Project execution – The plan indicates the activities carried out to create the product.#"
+a[5] = "C++ keywords  #Keywords appear in blue in Visual C++.        
+"
+a[6] ="#Each keyword has a predefined purpose in the language. #"
+a[7] = "#Do not use keywords as variable and constant names!!#"
 
-a[8] = "#Stakeholders
-#People who have a stake or interest in the project – Identify as early as possible – Set up adequate communication channel.
+a[8] = "#bool, break, case, char, const, continue, while.";
+a[9] = "Programming Style#     C++ is a free-format language, which means that:
+#Code can be indented in any way. 
 ";
-a[9] =  "Stakeholder groups – Internal to the project – External to the project team but within the same organisation" 
-a[10]= "#– External to both the project team and the organisation.
-";
-a[11] = "Effective objective – something that is within the control.
+a[10] = "Extra blanks (spaces) or tabs before or after identifiers/operators are ignored. 
 "
-a[12] = "#– Specific – concrete and well defined • “to reduce customer complains” • “to improve customer relations”#"
-a[13] ="– Measurable – measures of effectiveness which tell how successful the project has been • “To reduce customer complains”
-"
-a[14] ="#– Achievable – within the power to achieve • by individual or group "
-a[15] = "#– Relevant – to the true purpose of the project"
-a[16] = "#– Time constrained – a definite point in time by which the objective should have been achieved.
-"; 
-a[17] = "Project Manager#Work, Quality,Human Resources,Time, Communications,Costs."
-a[18] = "Click to wacth video";
+a[11] ="#Blank lines are ignored by the compiler just like comments. #"
+a[12] = "#There can be more than one statement on a single line.#"
+
+a[13] = "#A single statement can continue over several lines.";
+a[14] = "Click to wacth video";
 var cstr;
 var numOfSlides = array_length_1d(global.lectureText);
-if (conversationCount &lt;= 18)
+if (conversationCount &lt;= 14)
 {
 numOfChar2 = 0;
 

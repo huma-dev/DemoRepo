@@ -1,7 +1,7 @@
 function  createUser(varUser, varPass)
 {
 	var userExists;
-	var myFirebaseRef = new Firebase("https://gmdemoapp.firebaseio.com/Comsats/user");
+	var myFirebaseRef = new Firebase("https://gmdemoapp.firebaseio.com/FASTi/user");
 	myFirebaseRef.once("value", function(snapshot) {
     userExists = snapshot.child(varUser).exists();
   // a === true

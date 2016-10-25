@@ -65,8 +65,8 @@ global.CacthTheEggCounter ++ ;
     <instance objName="objRack" x="368" y="160" name="inst_F00C1EB8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRack" x="527" y="158" name="inst_86AFC44C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objParchment" x="4" y="-32" name="inst_A4AAFEB3" locked="0" code="" scaleX="1.1599999666214" scaleY="0.467836260795593" colour="4294967295" rotation="0"/>
-    <instance objName="objControl" x="24" y="6" name="inst_0AC74A91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objScore" x="0" y="92" name="inst_93E7623C" locked="0" code="" scaleX="0.502923965454102" scaleY="0.496240615844727" colour="4294967295" rotation="0"/>
+    <instance objName="objControl" x="42" y="18" name="inst_6376297F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objRod" x="-16" y="400" name="inst_64CF3ECB" locked="0" code="" scaleX="0.600000023841858" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
     <instance objName="objBasket" x="328" y="411" name="inst_C86612C7" locked="0" code="" scaleX="0.597015023231506" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
